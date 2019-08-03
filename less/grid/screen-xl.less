@@ -1,0 +1,14 @@
+@media only screen and (min-width: @breakpoint-lg) {
+    @media: xl;
+
+    .container-fluid {
+        max-width: @fluid-xl;
+    }
+
+    .display(@media);
+    .columns(@grid, @media);
+
+    .col-@{media} {
+        flex: 1 1 1%;
+    }
+}

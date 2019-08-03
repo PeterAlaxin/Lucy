@@ -1,0 +1,19 @@
+@media only screen and (min-width: @breakpoint-xs) and (max-width: calc(@breakpoint-sm - 1px)) {
+    @media: sm;
+
+    .container-fluid {
+        max-width: @fluid-sm;
+    }
+
+    .display(@media);
+}
+
+@media only screen and (min-width: @breakpoint-xs) {
+    @media: sm;
+
+    .columns(@grid, @media);
+
+    .col-@{media} {
+        flex: 1 1 1%;
+    }
+}

@@ -1,0 +1,10 @@
+.widthloop(@i:1) when (@i =< 100) {
+    .w-@{i} {
+        @width: ~"@{i}%";
+        width: @width;
+    }
+
+    .widthloop(@i + 1);
+}
+
+.widthloop();

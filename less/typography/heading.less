@@ -1,0 +1,8 @@
+.for(@headings, {
+    h@{i}, .h@{i} {
+        font-size: @value;
+        font-family: @font-header;
+        line-height: (@value*(1.818-(2*@value/10)));
+        width: 100%;
+    }
+});

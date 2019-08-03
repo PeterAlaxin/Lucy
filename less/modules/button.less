@@ -1,0 +1,198 @@
+button, a.button {
+    border: 1px solid lighten(@color-primary, 10%);
+    background-color: @color-primary;
+    color: contrast(@color-primary);
+    font-size: calc(1rem + 0.1vw);
+    padding: 0.5rem 2rem;
+    border-radius: 0;
+    outline: none;
+    cursor: pointer;
+    margin: 0.3rem 0.5rem;
+    display: inline-block;
+    text-decoration: none;
+    font-family: @font-header;
+
+    &:hover {
+        background-color: transparent;
+        color: @color-primary;
+    }
+
+    &:active {
+        position: relative;
+        top: 2px;
+        left: 2px;
+    }
+
+    &.flat {
+        border-radius: 0;
+    }
+
+    &.natural {
+        box-shadow: @shadow-h-offset @shadow-v-offset @shadow-blur @shadow-color;
+
+        &:active {
+            box-shadow: calc(@shadow-h-offset/2) calc(@shadow-v-offset/2) @shadow-blur @shadow-color;
+        }
+    }
+
+    &.ghost, &.link {
+        color: @color-primary;
+        background-color: transparent;
+
+        &:hover {
+            background-color: @color-primary;
+            color: contrast(@color-primary);
+        }
+    }
+
+    &.link {
+        border-width: 0 0 1px 0;
+    }
+
+    &.large {
+        font-size: calc(1.5rem + 0.1vw);
+    }
+
+    &.small {
+        font-size: calc(.75rem + 0.1vw);
+    }
+
+    &.secondary {
+        background-color: @color-secondary;
+        color: contrast(@color-secondary);
+        border-color: lighten(@color-secondary, 10%);
+
+        &:hover {
+            background-color: transparent;
+            color: @color-secondary;
+        }
+
+        &.ghost,  &.link {
+            color: @color-secondary;
+            background-color: transparent;
+
+            &:hover {
+                background-color: @color-secondary;
+                color: contrast(@color-secondary);
+            }
+        }
+    }
+
+    &.terciary {
+        background-color: @color-terciary;
+        color: contrast(@color-terciary);
+        border-color: lighten(@color-terciary, 10%);
+
+        &:hover {
+            background-color: transparent;
+            color: @color-terciary;
+        }
+
+        &.ghost, &.link {
+            color: @color-terciary;
+            background-color: transparent;
+
+            &:hover {
+                background-color: @color-terciary;
+                color: contrast(@color-terciary);
+            }
+        }
+    }
+
+    &.info {
+        background-color: @color-info;
+        color: contrast(@color-info);
+        border-color: lighten(@color-info, 10%);
+
+        &:hover {
+            background-color: transparent;
+            color: @color-info;
+        }
+
+        &.ghost, &.link {
+            color: @color-info;
+            background-color: transparent;
+
+            &:hover {
+                background-color: @color-info;
+                color: contrast(@color-info);
+            }
+        }
+    }
+
+    &.success {
+        background-color: @color-success;
+        color: contrast(@color-success);
+        border-color: lighten(@color-success, 10%);
+
+        &:hover {
+            background-color: transparent;
+            color: @color-success;
+        }
+
+        &.ghost, &.link {
+            color: @color-success;
+            background-color: transparent;
+
+            &:hover {
+                background-color: @color-success;
+                color: contrast(@color-success);
+            }
+        }
+    }
+
+    &.warning {
+        background-color: @color-warning;
+        color: contrast(@color-warning);
+        border-color: lighten(@color-warning, 10%);
+
+        &:hover {
+            background-color: transparent;
+            color: @color-warning;
+        }
+
+        &.ghost, &.link {
+            color: @color-warning;
+            background-color: transparent;
+
+            &:hover {
+                background-color: @color-warning;
+                color: contrast(@color-warning);
+            }
+        }
+    }
+
+    &.danger {
+        background-color: @color-danger;
+        color: contrast(@color-danger);
+        border-color: lighten(@color-danger, 10%);
+
+        &:hover {
+            background-color: transparent;
+            color: @color-danger;
+        }
+
+        &.ghost, &.link {
+            color: @color-danger;
+            background-color: transparent;
+
+            &:hover {
+                background-color: @color-danger;
+                color: contrast(@color-danger);
+            }
+        }
+    }
+
+    &.disabled, &:disabled {
+        background-color: @color-disabled;
+        color: @color-disabled-text;
+        border-color: lighten(@color-disabled, 10%);
+        cursor: not-allowed;
+        pointer-events: none;
+
+        &.ghost, &.link {
+            color: @color-disabled;
+            background-color: transparent;
+        }
+    }
+}

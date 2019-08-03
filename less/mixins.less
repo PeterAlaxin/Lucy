@@ -1,0 +1,56 @@
+.for(@list, @code) {
+    & {
+        .loop(@i:1) when (@i =< length(@list)) {
+            @value: extract(@list, @i);
+            @i0: @i - 1;
+
+            @code();
+
+            .loop(@i + 1);
+        }
+
+        .loop();
+    }
+}
+
+.display(@media) {
+    .for(@displays, {
+        .d-@{media}-@{value} {
+            display: @value;
+        }
+    });
+}
+
+.display_no_media() {
+    .for(@displays, {
+        .d-@{value} {
+            display: @value;
+        }
+    });
+}
+
+.columns (@index, @media: "") when (@index > 0){
+    & when (@media = "") {
+        .col-@{index}{
+            width: calc(@index/@grid * 100%);
+            flex: inherit;
+        }
+        .col-offset-@{index}{
+            margin-left: calc(@index/@grid * 100%);
+            flex: inherit;
+        }
+    }
+
+    & when not (@media = "") {
+        .col-@{media}-@{index}{
+            width: calc(@index/@grid * 100%);
+            flex: inherit;
+        }
+        .col-@{media}-offset-@{index}{
+            margin-left: calc(@index/@grid * 100%);
+            flex: inherit;
+        }
+    }
+
+    .columns(@index - 1, @media);
+}
