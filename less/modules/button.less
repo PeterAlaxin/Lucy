@@ -1,7 +1,7 @@
 button, a.button {
-    border: 1px solid lighten(@color-primary, 10%);
-    background-color: @color-primary;
-    color: contrast(@color-primary);
+    border: 1px solid lighten(@color-button, 10%);
+    background-color: @color-button;
+    color: contrast(@color-button);
     font-size: calc(1rem + 0.1vw);
     padding: 0.5rem 2rem;
     border-radius: 0;
@@ -11,10 +11,10 @@ button, a.button {
     display: inline-block;
     text-decoration: none;
     font-family: @font-header;
+    line-height: normal;
 
     &:hover {
-        background-color: transparent;
-        color: @color-primary;
+        background-color: darken(@color-button, 10%);
     }
 
     &:active {
@@ -36,12 +36,12 @@ button, a.button {
     }
 
     &.ghost, &.link {
-        color: @color-primary;
+        color: @color-button;
         background-color: transparent;
 
         &:hover {
-            background-color: @color-primary;
-            color: contrast(@color-primary);
+            background-color: @color-button;
+            color: contrast(@color-button);
         }
     }
 
@@ -55,132 +55,6 @@ button, a.button {
 
     &.small {
         font-size: calc(.75rem + 0.1vw);
-    }
-
-    &.secondary {
-        background-color: @color-secondary;
-        color: contrast(@color-secondary);
-        border-color: lighten(@color-secondary, 10%);
-
-        &:hover {
-            background-color: transparent;
-            color: @color-secondary;
-        }
-
-        &.ghost,  &.link {
-            color: @color-secondary;
-            background-color: transparent;
-
-            &:hover {
-                background-color: @color-secondary;
-                color: contrast(@color-secondary);
-            }
-        }
-    }
-
-    &.terciary {
-        background-color: @color-terciary;
-        color: contrast(@color-terciary);
-        border-color: lighten(@color-terciary, 10%);
-
-        &:hover {
-            background-color: transparent;
-            color: @color-terciary;
-        }
-
-        &.ghost, &.link {
-            color: @color-terciary;
-            background-color: transparent;
-
-            &:hover {
-                background-color: @color-terciary;
-                color: contrast(@color-terciary);
-            }
-        }
-    }
-
-    &.info {
-        background-color: @color-info;
-        color: contrast(@color-info);
-        border-color: lighten(@color-info, 10%);
-
-        &:hover {
-            background-color: transparent;
-            color: @color-info;
-        }
-
-        &.ghost, &.link {
-            color: @color-info;
-            background-color: transparent;
-
-            &:hover {
-                background-color: @color-info;
-                color: contrast(@color-info);
-            }
-        }
-    }
-
-    &.success {
-        background-color: @color-success;
-        color: contrast(@color-success);
-        border-color: lighten(@color-success, 10%);
-
-        &:hover {
-            background-color: transparent;
-            color: @color-success;
-        }
-
-        &.ghost, &.link {
-            color: @color-success;
-            background-color: transparent;
-
-            &:hover {
-                background-color: @color-success;
-                color: contrast(@color-success);
-            }
-        }
-    }
-
-    &.warning {
-        background-color: @color-warning;
-        color: contrast(@color-warning);
-        border-color: lighten(@color-warning, 10%);
-
-        &:hover {
-            background-color: transparent;
-            color: @color-warning;
-        }
-
-        &.ghost, &.link {
-            color: @color-warning;
-            background-color: transparent;
-
-            &:hover {
-                background-color: @color-warning;
-                color: contrast(@color-warning);
-            }
-        }
-    }
-
-    &.danger {
-        background-color: @color-danger;
-        color: contrast(@color-danger);
-        border-color: lighten(@color-danger, 10%);
-
-        &:hover {
-            background-color: transparent;
-            color: @color-danger;
-        }
-
-        &.ghost, &.link {
-            color: @color-danger;
-            background-color: transparent;
-
-            &:hover {
-                background-color: @color-danger;
-                color: contrast(@color-danger);
-            }
-        }
     }
 
     &.disabled, &:disabled {
