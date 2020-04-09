@@ -39,6 +39,17 @@
             margin-left: calc(@index/@grid * 100%);
             flex: inherit;
         }
+        & when (@index = 1) {
+            .align-v-top{
+                align-self: flex-start;
+            }
+            .align-v-center{
+                align-self: center;
+            }
+            .align-v-bottom{
+                align-self: flex-end;
+            }
+        }
     }
 
     & when not (@media = "") {
@@ -49,6 +60,17 @@
         .col-@{media}-offset-@{index}{
             margin-left: calc(@index/@grid * 100%);
             flex: inherit;
+        }
+        & when (@index = 1) {
+            .align-v-@{media}-top{
+                align-self: flex-start;
+            }
+            .align-v-@{media}-center{
+                align-self: center;
+            }
+            .align-v-@{media}-bottom{
+                align-self: flex-end;
+            }
         }
     }
 

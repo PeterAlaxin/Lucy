@@ -323,6 +323,15 @@ table {
     margin-left: calc(1/12 * 100%);
     flex: inherit;
   }
+  .align-v-top {
+    align-self: flex-start;
+  }
+  .align-v-center {
+    align-self: center;
+  }
+  .align-v-bottom {
+    align-self: flex-end;
+  }
 }
 @media only screen and (max-width: calc(600px - 1px)) {
   .container-fluid {
@@ -485,6 +494,15 @@ table {
     margin-left: calc(1/12 * 100%);
     flex: inherit;
   }
+  .align-v-sm-top {
+    align-self: flex-start;
+  }
+  .align-v-sm-center {
+    align-self: center;
+  }
+  .align-v-sm-bottom {
+    align-self: flex-end;
+  }
   .col-sm {
     flex: 1 1 1%;
   }
@@ -617,6 +635,15 @@ table {
   .col-md-offset-1 {
     margin-left: calc(1/12 * 100%);
     flex: inherit;
+  }
+  .align-v-md-top {
+    align-self: flex-start;
+  }
+  .align-v-md-center {
+    align-self: center;
+  }
+  .align-v-md-bottom {
+    align-self: flex-end;
   }
   .col-md {
     flex: 1 1 1%;
@@ -751,6 +778,15 @@ table {
     margin-left: calc(1/12 * 100%);
     flex: inherit;
   }
+  .align-v-lg-top {
+    align-self: flex-start;
+  }
+  .align-v-lg-center {
+    align-self: center;
+  }
+  .align-v-lg-bottom {
+    align-self: flex-end;
+  }
   .col-lg {
     flex: 1 1 1%;
   }
@@ -881,6 +917,15 @@ table {
   .col-xl-offset-1 {
     margin-left: calc(1/12 * 100%);
     flex: inherit;
+  }
+  .align-v-xl-top {
+    align-self: flex-start;
+  }
+  .align-v-xl-center {
+    align-self: center;
+  }
+  .align-v-xl-bottom {
+    align-self: flex-end;
   }
   .col-xl {
     flex: 1 1 1%;
@@ -1503,7 +1548,7 @@ a.button {
   border: 1px solid #1a1a1a;
   background-color: #000;
   color: #ffffff;
-  font-size: calc(1rem + 0.1vw);
+  font-size: calc(0.9rem + 0.1vw);
   padding: 0.5rem 2rem;
   border-radius: 0;
   outline: none;
@@ -1585,7 +1630,7 @@ a.button:disabled.link {
 }
 html,
 body {
-  font-size: calc(1rem + 0.1vw);
+  font-size: calc(0.9rem + 0.1vw);
   line-height: 1.618;
   margin: 0;
   padding: 0;
