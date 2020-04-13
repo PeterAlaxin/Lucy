@@ -1,0 +1,136 @@
+.form {
+    input, select, textarea {
+        font-size: calc(0.9rem + 0.1vw);
+        font-family: inherit;
+        background-color: #fff;
+        color: #333;
+        padding: .375rem .75rem;
+        line-height: 1.5;
+        width: calc(100% - 1.5rem - 2px);
+        display: block;
+        border: 1px solid #ccc;
+        overflow: hidden;
+        height: 1.75rem;
+    }
+
+    textarea {
+        height: auto;
+    }
+
+    input[type="search"], select {
+        width: 100%;
+        height: 2.65rem;
+    }
+
+    input[type="range"] {
+        height: 1.5rem;
+    }
+
+    input[type="checkbox"],
+    input[type="radio"], {
+        height: 1rem;
+        width: 1rem;
+        margin-right: @space-1;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    option {
+        font-size: calc(0.9rem + 0.1vw);
+        line-height: 1.5;
+        height: 2.65rem;
+    }
+
+    &.large {
+        input, select, textarea {
+            height: 1.75rem;
+            padding: .75rem .75rem;
+        }
+
+        input[type="search"], select {
+            height: 3.4rem;
+            padding: .375rem .75rem;
+        }
+
+        input[type="checkbox"],
+        input[type="radio"], {
+            height: 1.3rem;
+            width: 1.3rem;
+        }
+
+        option {
+            height: 3.4rem;
+        }
+
+        textarea {
+            height: auto;
+            font-size: calc(1.5rem + 0.1vw);
+        }
+    }
+    &.small {
+        input, select, textarea {
+            height: 1.3rem;
+            padding: .1875rem .75rem;
+        }
+        input[type="search"], select {
+            height: 1.82rem;
+            padding: .1875rem .75rem;
+        }
+
+        input[type="checkbox"],
+        input[type="radio"], {
+            height: 0.75rem;
+            width: 0.75rem;
+        }
+
+        option {
+            height: 1.82rem;
+        }
+
+        textarea {
+            height: auto;
+            font-size: calc(0.75rem + 0.1vw);
+        }
+    }
+}
+
+.form.link {
+    input, select, textarea {
+        border: none;
+        border-bottom: 1px solid #ccc;
+    }
+}
+
+.form.rounded {
+    input, select, textarea {
+        border-radius: .2rem;
+    }
+}
+
+.form.natural {
+    input, select, textarea {
+        box-shadow: @shadow-h-offset @shadow-v-offset @shadow-blur @shadow-color;
+    }
+
+    input[type="range"],
+    input[type="checkbox"],
+    input[type="radio"], {
+        box-shadow: none;
+    }
+}
+
+.form.large {
+    font-size: calc(1.5rem + 0.1vw);
+
+    input, select {
+        font-size: calc(1.5rem + 0.1vw);
+    }
+}
+
+.form.small {
+    font-size: calc(0.75rem + 0.1vw);
+
+    input, select {
+        font-size: calc(0.75rem + 0.1vw);
+    }
+}

@@ -1,0 +1,49 @@
+.form {
+    padding: @space-1 @space-2;
+
+    fieldset {
+        border: 1px solid;
+        padding: @space-1 0;
+        margin-bottom: @space-1;
+
+        legend {
+            padding: @space-0 @space-2;
+            margin: @space-0 @space-2;
+
+            &.align-left {
+                text-align: left;
+            }
+            &.align-right {
+                text-align: right;
+            }
+            &.align-center {
+                text-align: center;
+            }
+
+            &.bordered {
+                border: 1px solid;
+            }
+            &.edged {
+                border-left: 1px solid;
+                border-right: 1px solid;
+            }
+        }
+
+        .form-text {
+            font-size: 80%;
+            padding-top: 0.5rem;
+            display: block;
+        }
+    }
+
+    &.large {
+        font-size: calc(1.5rem + 0.1vw);
+
+        .form-text {
+            font-size: 60%;
+        }
+    }
+    &.small {
+        font-size: calc(0.75rem + 0.1vw);
+    }
+}

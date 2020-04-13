@@ -1,0 +1,36 @@
+.form.inline {
+    .form-group {
+        flex-direction: row;
+        display: flex;
+        justify-content: flexstart;
+        align-items: center;
+
+        label {
+            display: flex;
+            padding-right: @space-1;
+            width: 30%;
+        }
+    }
+}
+
+.form {
+    .form-group {
+        padding-bottom: @space-2;
+
+        &.radiocheck {
+            padding-bottom: @space-2;
+            flex-direction: row-reverse;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            label {
+                display: flex;
+            }
+        }
+
+        label {
+            display: block;
+        }
+    }
+}

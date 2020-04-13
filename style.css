@@ -225,7 +225,7 @@ table {
     padding: 0 15px;
     box-sizing: border-box;
     flex: 1 1 1%;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
   }
   .col-12 {
     width: calc(12/12 * 100%);
@@ -1628,6 +1628,223 @@ a.button:disabled.link {
   color: #cccccc;
   background-color: transparent;
 }
+.tooltip {
+  overflow: visible;
+  cursor: help;
+  position: relative;
+}
+.tooltip:after {
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.18s ease-out 0.18s;
+  text-indent: 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  text-shadow: none;
+  font-size: 0.75rem;
+  background: rgba(16, 16, 16, 0.95);
+  border-radius: 2px;
+  color: #fff;
+  content: attr(aria-label);
+  padding: 0.5em 1em;
+  position: absolute;
+  white-space: nowrap;
+  z-index: 10;
+}
+.tooltip:before {
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-top-color: rgba(16, 16, 16, 0.95);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.18s ease-out 0.18s;
+  content: "";
+  position: absolute;
+  z-index: 10;
+}
+.tooltip:hover:before,
+.tooltip:hover:after,
+.tooltip[data-balloon-visible]:before,
+.tooltip[data-balloon-visible]:after,
+.tooltip:not([data-balloon-nofocus]):focus:before,
+.tooltip:not([data-balloon-nofocus]):focus:after {
+  opacity: 1;
+  pointer-events: none;
+}
+.tooltip.tooltip-up:after {
+  bottom: 100%;
+  left: 50%;
+  margin-bottom: 10px;
+  transform: translate(-50%, 4px);
+  transform-origin: top;
+}
+.tooltip.tooltip-up:before {
+  bottom: 100%;
+  left: 50%;
+  transform: translate(-50%, 4px);
+  transform-origin: top;
+}
+.tooltip.tooltip-up:hover:after,
+.tooltip.tooltip-up:hover:before {
+  transform: translate(-50%, 0);
+}
+.tooltip.tooltip-up-left:after {
+  bottom: 100%;
+  left: 0;
+  margin-bottom: 10px;
+  transform: translate(0, 4px);
+  transform-origin: top;
+}
+.tooltip.tooltip-up-left:before {
+  bottom: 100%;
+  left: 5px;
+  transform: translate(0, 4px);
+  transform-origin: top;
+}
+.tooltip.tooltip-up-left:hover:after,
+.tooltip.tooltip-up-left:hover:before {
+  transform: translate(0, 0);
+}
+.tooltip.tooltip-up-right:after {
+  bottom: 100%;
+  margin-bottom: 10px;
+  right: 0;
+  transform: translate(0, 4px);
+  transform-origin: top;
+}
+.tooltip.tooltip-up-right:before {
+  bottom: 100%;
+  right: 5px;
+  transform: translate(0, 4px);
+  transform-origin: top;
+}
+.tooltip.tooltip-up-right:hover:after,
+.tooltip.tooltip-up-right:hover:before {
+  transform: translate(0, 0);
+}
+.tooltip.tooltip-down:after {
+  left: 50%;
+  margin-top: 10px;
+  top: 100%;
+  transform: translate(-50%, calc(4px * -1));
+}
+.tooltip.tooltip-down:before {
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-bottom-color: rgba(16, 16, 16, 0.95);
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, calc(4px * -1));
+}
+.tooltip.tooltip-down:hover:after,
+.tooltip.tooltip-down:hover:before {
+  transform: translate(-50%, 0);
+}
+.tooltip.tooltip-down-left:after {
+  left: 0;
+  margin-top: 10px;
+  top: 100%;
+  transform: translate(0, calc(4px * -1));
+}
+.tooltip.tooltip-down-left:before {
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-bottom-color: rgba(16, 16, 16, 0.95);
+  left: 5px;
+  top: 100%;
+  transform: translate(0, calc(4px * -1));
+}
+.tooltip.tooltip-down-left:hover:after,
+.tooltip.tooltip-down-left:hover:before {
+  transform: translate(0, 0);
+}
+.tooltip.tooltip-down-right:after {
+  right: 0;
+  margin-top: 10px;
+  top: 100%;
+  transform: translate(0, calc(4px * -1));
+}
+.tooltip.tooltip-down-right:before {
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-bottom-color: rgba(16, 16, 16, 0.95);
+  right: 5px;
+  top: 100%;
+  transform: translate(0, calc(4px * -1));
+}
+.tooltip.tooltip-down-right:hover:after,
+.tooltip.tooltip-down-right:hover:before {
+  transform: translate(0, 0);
+}
+.tooltip.tooltip-left:after {
+  margin-right: 10px;
+  right: 100%;
+  top: 50%;
+  transform: translate(4px, -50%);
+}
+.tooltip.tooltip-left:before {
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-left-color: rgba(16, 16, 16, 0.95);
+  right: 100%;
+  top: 50%;
+  transform: translate(4px, -50%);
+}
+.tooltip.tooltip-left:hover:after,
+.tooltip.tooltip-left:hover:before {
+  transform: translate(0, -50%);
+}
+.tooltip.tooltip-right:after {
+  left: 100%;
+  margin-left: 10px;
+  top: 50%;
+  transform: translate(calc(4px * -1), -50%);
+}
+.tooltip.tooltip-right:before {
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-right-color: rgba(16, 16, 16, 0.95);
+  left: 100%;
+  top: 50%;
+  transform: translate(calc(4px * -1), -50%);
+}
+.tooltip.tooltip-right:hover:after,
+.tooltip.tooltip-right:hover:before {
+  transform: translate(0, -50%);
+}
+.tooltip.tooltip-sm:after {
+  white-space: normal;
+  width: 80px;
+}
+.tooltip.tooltip-md:after {
+  white-space: normal;
+  width: 150px;
+}
+.tooltip.tooltip-lg:after {
+  white-space: normal;
+  width: 260px;
+}
+.tooltip.tooltip-xl:after {
+  white-space: normal;
+  width: 380px;
+}
+.tooltip.tooltip-fit:after {
+  white-space: normal;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .tooltip.tooltip-xl:after {
+    white-space: normal;
+    width: 90vw;
+  }
+}
 html,
 body {
   font-size: calc(0.9rem + 0.1vw);
@@ -1827,5 +2044,194 @@ ol.list-upper-latin {
 }
 ol.list-upper-roman {
   list-style-type: upper-roman;
+}
+.form {
+  padding: 0.5rem 1rem;
+}
+.form fieldset {
+  border: 1px solid;
+  padding: 0.5rem 0;
+  margin-bottom: 0.5rem;
+}
+.form fieldset legend {
+  padding: 0 1rem;
+  margin: 0 1rem;
+}
+.form fieldset legend.align-left {
+  text-align: left;
+}
+.form fieldset legend.align-right {
+  text-align: right;
+}
+.form fieldset legend.align-center {
+  text-align: center;
+}
+.form fieldset legend.bordered {
+  border: 1px solid;
+}
+.form fieldset legend.edged {
+  border-left: 1px solid;
+  border-right: 1px solid;
+}
+.form fieldset .form-text {
+  font-size: 80%;
+  padding-top: 0.5rem;
+  display: block;
+}
+.form.large {
+  font-size: calc(1.5rem + 0.1vw);
+}
+.form.large .form-text {
+  font-size: 60%;
+}
+.form.small {
+  font-size: calc(0.75rem + 0.1vw);
+}
+.form.inline .form-group {
+  flex-direction: row;
+  display: flex;
+  justify-content: flexstart;
+  align-items: center;
+}
+.form.inline .form-group label {
+  display: flex;
+  padding-right: 0.5rem;
+  width: 30%;
+}
+.form .form-group {
+  padding-bottom: 1rem;
+}
+.form .form-group.radiocheck {
+  padding-bottom: 1rem;
+  flex-direction: row-reverse;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.form .form-group.radiocheck label {
+  display: flex;
+}
+.form .form-group label {
+  display: block;
+}
+.form input,
+.form select,
+.form textarea {
+  font-size: calc(0.9rem + 0.1vw);
+  font-family: inherit;
+  background-color: #fff;
+  color: #333;
+  padding: 0.375rem 0.75rem;
+  line-height: 1.5;
+  width: calc(100% - 1.5rem - 2px);
+  display: block;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  height: 1.75rem;
+}
+.form textarea {
+  height: auto;
+}
+.form input[type="search"],
+.form select {
+  width: 100%;
+  height: 2.65rem;
+}
+.form input[type="range"] {
+  height: 1.5rem;
+}
+.form input[type="checkbox"],
+.form input[type="radio"] {
+  height: 1rem;
+  width: 1rem;
+  margin-right: 0.5rem;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.form option {
+  font-size: calc(0.9rem + 0.1vw);
+  line-height: 1.5;
+  height: 2.65rem;
+}
+.form.large input,
+.form.large select,
+.form.large textarea {
+  height: 1.75rem;
+  padding: 0.75rem 0.75rem;
+}
+.form.large input[type="search"],
+.form.large select {
+  height: 3.4rem;
+  padding: 0.375rem 0.75rem;
+}
+.form.large input[type="checkbox"],
+.form.large input[type="radio"] {
+  height: 1.3rem;
+  width: 1.3rem;
+}
+.form.large option {
+  height: 3.4rem;
+}
+.form.large textarea {
+  height: auto;
+  font-size: calc(1.5rem + 0.1vw);
+}
+.form.small input,
+.form.small select,
+.form.small textarea {
+  height: 1.3rem;
+  padding: 0.1875rem 0.75rem;
+}
+.form.small input[type="search"],
+.form.small select {
+  height: 1.82rem;
+  padding: 0.1875rem 0.75rem;
+}
+.form.small input[type="checkbox"],
+.form.small input[type="radio"] {
+  height: 0.75rem;
+  width: 0.75rem;
+}
+.form.small option {
+  height: 1.82rem;
+}
+.form.small textarea {
+  height: auto;
+  font-size: calc(0.75rem + 0.1vw);
+}
+.form.link input,
+.form.link select,
+.form.link textarea {
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+.form.rounded input,
+.form.rounded select,
+.form.rounded textarea {
+  border-radius: 0.2rem;
+}
+.form.natural input,
+.form.natural select,
+.form.natural textarea {
+  box-shadow: 4px 4px 6px hsla(0, 0%, 0%, 0.2);
+}
+.form.natural input[type="range"],
+.form.natural input[type="checkbox"],
+.form.natural input[type="radio"] {
+  box-shadow: none;
+}
+.form.large {
+  font-size: calc(1.5rem + 0.1vw);
+}
+.form.large input,
+.form.large select {
+  font-size: calc(1.5rem + 0.1vw);
+}
+.form.small {
+  font-size: calc(0.75rem + 0.1vw);
+}
+.form.small input,
+.form.small select {
+  font-size: calc(0.75rem + 0.1vw);
 }
 /*# sourceMappingURL=style.css.map */
