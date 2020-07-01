@@ -1857,37 +1857,37 @@ body {
 }
 h1,
 .h1 {
-  font-size: 2.1rem;
+  font-size: 2.5rem;
   font-family: 'Roboto', sans-serif;
-  line-height: 2.9358rem;
+  line-height: 3.295rem;
   width: 100%;
 }
 h2,
 .h2 {
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+  line-height: 2.836rem;
+  width: 100%;
+}
+h3,
+.h3 {
   font-size: 1.75rem;
   font-family: 'Roboto', sans-serif;
   line-height: 2.569rem;
   width: 100%;
 }
-h3,
-.h3 {
+h4,
+.h4 {
   font-size: 1.5rem;
   font-family: 'Roboto', sans-serif;
   line-height: 2.277rem;
   width: 100%;
 }
-h4,
-.h4 {
-  font-size: 1.35rem;
-  font-family: 'Roboto', sans-serif;
-  line-height: 2.0898rem;
-  width: 100%;
-}
 h5,
 .h5 {
-  font-size: 1.15rem;
+  font-size: 1.25rem;
   font-family: 'Roboto', sans-serif;
-  line-height: 1.8262rem;
+  line-height: 1.96rem;
   width: 100%;
 }
 h6,
