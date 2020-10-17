@@ -1,0 +1,38 @@
+html, body {
+  scroll-behavior: smooth;
+  position: relative;
+  
+  *:last-child {
+    margin-bottom: 0;
+  }
+}
+#minimenu {
+    top: 20px;
+}
+.back-to-top-wrapper {
+  position: absolute;
+  top: 100vh;
+  right: 3rem;
+  bottom: -5em;
+  width: 3em;
+  pointer-events: none;
+}
+.back-to-top-link {   
+  pointer-events: all;
+  top: calc(100vh - 5rem);    
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.3rem;
+  line-height: 3rem;
+  text-align: center;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 1px solid #333;
+  color: #333;
+  padding: 0.25rem;
+}
+.back-to-top-link:hover {
+    background-color: #333;
+    color: #fff;
+}
