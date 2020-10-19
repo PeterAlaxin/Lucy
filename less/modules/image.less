@@ -1,0 +1,27 @@
+.imgWraper {
+    position: relative;
+    padding-bottom: 100.00%;
+
+    &.format_16_9 {
+        padding-bottom: 56.25%;
+    }
+
+    &.format_4_3 {
+        padding-bottom: 70.00%;
+    }
+
+    &.format_3_2 {
+        padding-bottom: 66.66%;
+    }
+
+    &.format_3_1 {
+        padding-bottom: 33.33%;
+    }
+
+    img {
+        position: absolute;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}

@@ -9,10 +9,10 @@
     </head>
     <body>
         <div class="container-fluid">
-            <h1 id="top" class="text-shadow mb-3">Hi, I am Lucy - CSS framework</h1>
+            <h1 id="top" class="text-shadow mb-2">Hi, I am Lucy - CSS framework</h1>
             <div class="row">
-                <div class="col-12 col-sm-3 d-xs-none">
-                    <ul id="minimenu" class="mt-2 mb-2 sticky pr-2">
+                <div class="col-12 col-md-3 d-sm-none d-xs-none">
+                    <ul id="minimenu" class="mt-0 sticky">
                         <li><a href="#t">Thypography</a>
                             <ul>
                                 <li><a href="#th">Headers</a></li>
@@ -55,9 +55,18 @@
                                 <li><a href="#fi">Inline form</a></li>
                             </ul>
                         </li>
+                        <li><a href="#i">Images</a>
+                            <ul>
+                                <li><a href="#i169">16:9</a></li>
+                                <li><a href="#i43">4:3</a></li>
+                                <li><a href="#i32">3:2</a></li>
+                                <li><a href="#i31">3:1</a></li>
+                                <li><a href="#i11">1:1</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
-                <div class="col-12 col-sm-9">
+                <div class="col-12 col-md-9">
                     <h2 id="t" class="anchor mb-2">Thypography</h2>
                     <h3 id="th" class="anchor mb-2">Headers</h3>
                     <div class="row mb-3">
@@ -889,10 +898,117 @@
                             </form>
                         </div>
                     </div>
+
+                    <h2 id="i" class="mb-2">Images</h2>
+                    <div class="row mb-1">
+                        <h3 id="i169" class="mb-2">16:9</h3>
+                        <div class="col col-12 col-sm-6 col-md-4">
+                            <div class="imgWraper format_16_9">
+                                <img src="images/img_300_300.jpg" />
+                            </div>
+                            <div class="text-center h6">300 x 300</div>
+                        </div>
+                        <div class="col col-12 col-sm-6 col-md-4">
+                            <div class="imgWraper format_16_9">
+                                <img src="images/img_600_400.jpg" />
+                            </div>
+                            <div class="text-center h6">600 x 400</div>
+                        </div>
+                        <div class="col col-12 col-sm-6 col-md-4">
+                            <div class="imgWraper format_16_9">
+                                <img src="images/img_400_600.jpg" />
+                            </div>
+                            <div class="text-center h6">400 x 600</div>
+                        </div>
+                    </div>
+                    <div class="row mb-1">
+                        <h3 id="i43" class="mb-2">4:3</h3>
+                        <div class="col col-12 col-sm-6 col-md-4">
+                            <div class="imgWraper format_4_3">
+                                <img src="images/img_300_300.jpg" />
+                            </div>
+                            <div class="text-center h6">300 x 300</div>
+                        </div>
+                        <div class="col col-12 col-sm-6 col-md-4">
+                            <div class="imgWraper format_4_3">
+                                <img src="images/img_600_400.jpg" />
+                            </div>
+                            <div class="text-center h6">600 x 400</div>
+                        </div>
+                        <div class="col col-12 col-sm-6 col-md-4">
+                            <div class="imgWraper format_4_3">
+                                <img src="images/img_400_600.jpg" />
+                            </div>
+                            <div class="text-center h6">400 x 600</div>
+                        </div>
+                    </div>
+                    <div class="row mb-1">
+                        <h3 id="i32" class="mb-2">3:2</h3>
+                        <div class="col col-12 col-sm-6 col-md-4">
+                            <div class="imgWraper format_3_2">
+                                <img src="images/img_300_300.jpg" />
+                            </div>
+                            <div class="text-center h6">300 x 300</div>
+                        </div>
+                        <div class="col col-12 col-sm-6 col-md-4">
+                            <div class="imgWraper format_3_2">
+                                <img src="images/img_600_400.jpg" />
+                            </div>
+                            <div class="text-center h6">600 x 400</div>
+                        </div>
+                        <div class="col col-12 col-sm-6 col-md-4">
+                            <div class="imgWraper format_3_2">
+                                <img src="images/img_400_600.jpg" />
+                            </div>
+                            <div class="text-center h6">400 x 600</div>
+                        </div>
+                    </div>
+                    <div class="row mb-1">
+                        <h3 id="i31" class="mb-2">3:1</h3>
+                        <div class="col col-12 col-sm-6 col-md-4">
+                            <div class="imgWraper format_3_1">
+                                <img src="images/img_300_300.jpg" />
+                            </div>
+                            <div class="text-center h6">300 x 300</div>
+                        </div>
+                        <div class="col col-12 col-sm-6 col-md-4">
+                            <div class="imgWraper format_3_1">
+                                <img src="images/img_600_400.jpg" />
+                            </div>
+                            <div class="text-center h6">600 x 400</div>
+                        </div>
+                        <div class="col col-12 col-sm-6 col-md-4">
+                            <div class="imgWraper format_3_1">
+                                <img src="images/img_400_600.jpg" />
+                            </div>
+                            <div class="text-center h6">400 x 600</div>
+                        </div>
+                    </div>
+                    <div class="row mb-1">
+                        <h3 id="i11" class="mb-2">1:1</h3>
+                        <div class="col col-12 col-sm-6 col-md-4">
+                            <div class="imgWraper">
+                                <img src="images/img_300_300.jpg" />
+                            </div>
+                            <div class="text-center h6">300 x 300</div>
+                        </div>
+                        <div class="col col-12 col-sm-6 col-md-4">
+                            <div class="imgWraper">
+                                <img src="images/img_600_400.jpg" />
+                            </div>
+                            <div class="text-center h6">600 x 400</div>
+                        </div>
+                        <div class="col col-12 col-sm-6 col-md-4">
+                            <div class="imgWraper">
+                                <img src="images/img_400_600.jpg" />
+                            </div>
+                            <div class="text-center h6">400 x 600</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="back-to-top-wrapper">
+        <div class="back-to-top-wrapper d-sm-none d-xs-none">
             <a href="#top" class="back-to-top-link sticky">Top</a>
         </div>
     </body>
