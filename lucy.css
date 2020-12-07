@@ -126,20 +126,19 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-/*@import url('https://fonts.googleapis.com/css?family=Noto+Serif|Roboto&display=swap');*/
 @font-face {
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local('PT Sans'), local('PTSans-Regular'), url(https://fonts.gstatic.com/s/ptsans/v12/jizaRExUiTo99u79P0U.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/ptsans/v12/jizaRExUiTo99u79P0U.ttf) format('truetype');
 }
 @font-face {
   font-family: 'PT Serif';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local('PT Serif'), local('PTSerif-Regular'), url(https://fonts.gstatic.com/s/ptserif/v12/EJRVQgYoZZY2vCFuvDFR.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/ptserif/v12/EJRVQgYoZZY2vCFuvDFR.ttf) format('truetype');
 }
 @media only screen {
   .d-none {
@@ -2368,4 +2367,4 @@ input[type=range]:focus::-ms-fill-upper {
     margin: 0;
   }
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=lucy.css.map */
