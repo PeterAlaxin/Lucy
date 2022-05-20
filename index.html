@@ -8,65 +8,66 @@
         <link rel="stylesheet" type="text/css" href="custom.css">
     </head>
     <body>
-        <div class="container-fluid">
-            <h1 id="top" class="text-shadow mb-2">Hi, I am Lucy - CSS framework</h1>
+        <div id="top" class="container-fluid">
+            <nav class="mt-0 sticky">
+                <ul id="minimenu">
+                    <li><a href="#t">Thypography</a>
+                        <ul>
+                            <li><a href="#th">Headers</a></li>
+                            <li><a href="#tt">Text</a>
+                                <ul>
+                                    <li><a href="#ttp">Pangram</a></li>
+                                    <li><a href="#ttf">Format</a></li>
+                                    <li><a href="#ttta">Text align</a></li>
+                                    <li><a href="#ttva">Vertical align</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#ts">Tooltips</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#g">Grid</a>
+                        <ul>
+                            <li><a href="#gas">Auto size columns</a></li>
+                            <li><a href="#gf">Fixed width column</a></li>
+                            <li><a href="#gsb">Spaces between columns</a></li>
+                            <li><a href="#go">Offset</a></li>
+                            <li><a href="#gc">Center</a></li>
+                            <li><a href="#gr">Right</a></li>
+                            <li><a href="#grw">Row with two breaks</a></li>
+                            <li><a href="#gb">Breakpoints</a></li>
+                            <li><a href="#gbo">Border</a></li>
+                            <li><a href="#gw">Width</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#b">Buttons</a>
+                        <ul>
+                            <li><a href="#bl">Large</a></li>
+                            <li><a href="#bb">Basic</a></li>
+                            <li><a href="#bs">Small</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#l">List</a></li>
+                    <li><a href="#f">Forms</a>
+                        <ul>
+                            <li><a href="#fc">Clasic form</a></li>
+                            <li><a href="#fi">Inline form</a></li>
+                            <li><a href="#ff">Floating form</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#i">Images</a>
+                        <ul>
+                            <li><a href="#i169">16:9</a></li>
+                            <li><a href="#i43">4:3</a></li>
+                            <li><a href="#i32">3:2</a></li>
+                            <li><a href="#i31">3:1</a></li>
+                            <li><a href="#i11">1:1</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <h1 class="text-shadow mt-3 mb-2">Hi, I am Lucy - CSS framework</h1>
             <div class="row">
-                <div class="col-12 col-md-3 d-sm-none d-xs-none">
-                    <ul id="minimenu" class="mt-0 sticky">
-                        <li><a href="#t">Thypography</a>
-                            <ul>
-                                <li><a href="#th">Headers</a></li>
-                                <li><a href="#tt">Text</a>
-                                    <ul>
-                                        <li><a href="#ttp">Pangram</a></li>
-                                        <li><a href="#ttf">Format</a></li>
-                                        <li><a href="#ttta">Text align</a></li>
-                                        <li><a href="#ttva">Vertical align</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#ts">Tooltips</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#g">Grid</a>
-                            <ul>
-                                <li><a href="#gas">Auto size columns</a></li>
-                                <li><a href="#gf">Fixed width column</a></li>
-                                <li><a href="#gsb">Spaces between columns</a></li>
-                                <li><a href="#go">Offset</a></li>
-                                <li><a href="#gc">Center</a></li>
-                                <li><a href="#gr">Right</a></li>
-                                <li><a href="#grw">Row with two breaks</a></li>
-                                <li><a href="#gb">Breakpoints</a></li>
-                                <li><a href="#gbo">Border</a></li>
-                                <li><a href="#gw">Width</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#b">Buttons</a>
-                            <ul>
-                                <li><a href="#bl">Large</a></li>
-                                <li><a href="#bb">Basic</a></li>
-                                <li><a href="#bs">Small</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#l">List</a></li>
-                        <li><a href="#f">Forms</a>
-                            <ul>
-                                <li><a href="#fc">Clasic form</a></li>
-                                <li><a href="#fi">Inline form</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#i">Images</a>
-                            <ul>
-                                <li><a href="#i169">16:9</a></li>
-                                <li><a href="#i43">4:3</a></li>
-                                <li><a href="#i32">3:2</a></li>
-                                <li><a href="#i31">3:1</a></li>
-                                <li><a href="#i11">1:1</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-12 col-md-9">
+                <div class="col col-12">
                     <h2 id="t" class="anchor mb-2">Thypography</h2>
                     <h3 id="th" class="anchor mb-2">Headers</h3>
                     <div class="row mb-3">
@@ -419,10 +420,10 @@
 
                     <h3 id="go" class="mt-2 mb-2">Offset</h3>
                     <div class="row mb-3">
-                        <div class="col col-6 col-offset-3 border text-center shadow">Offset 3</div>
+                        <div class="col col-6 offset-3 offset-lg-3 offset-sm-1 border text-center shadow">Offset 3</div>
                     </div>
                     <div class="row mb-3">
-                        <div class="col col-3 col-offset-8 border text-center shadow">Offset 8</div>
+                        <div class="col col-3 offset-lg-8 offset-sm-4 border text-center shadow">Offset 8</div>
                     </div>
 
                     <h3 id="gc" class="mt-2 mb-2">Center</h3>
@@ -896,6 +897,93 @@
                                     </div>
                                 </fieldset>
                             </form>
+                            <form id="ff" class="form form-floating rounded natural">
+                                <fieldset>
+                                    <legend class="edged">Floating form</legend>
+                                    <div class="row">
+                                        <div class="form-group col col-12 col-sm-6">
+                                            <label for="inputColor">Color</label>
+                                            <input type="color" id="inputColor" />
+                                            <small class="form-text">Quisque luctus sit amet massa eget faucibus. Curabitur feugiat ornare sapien, eu pretium tortor gravida non.</small>
+                                        </div>
+                                        <div class="form-group col col-12 col-sm-6">
+                                            <label for="inputDate">Date</label>
+                                            <input type="date" id="inputDate" />
+                                        </div>
+                                        <div class="form-group col col-12 col-sm-6">
+                                            <label for="inputDatetime">Datetime</label>
+                                            <input type="datetime-local" id="inputDatetime" />
+                                        </div>
+                                        <div class="form-group col col-12 col-sm-6">
+                                            <input type="email" id="inputEmail" placeholder=" " />
+                                            <label for="inputEmail">Email</label>
+                                        </div>
+                                        <div class="form-group col col-12 col-sm-6">
+                                            <label for="inputFile">File</label>
+                                            <input type="file" id="inputFile" />
+                                        </div>
+                                        <div class="form-group radiocheck col col-12 col-sm-6">
+                                            <label for="inputCheckbox">Checkbox</label>
+                                            <input type="checkbox" id="inputCheckbox" />
+                                        </div>
+                                        <div class="form-group col col-12 col-sm-6">
+                                            <label for="inputMonth">Month</label>
+                                            <input type="month" id="inputMonth" />
+                                        </div>
+                                        <div class="form-group col col-12 col-sm-6">
+                                            <label for="inputNumber">Number</label>
+                                            <input type="number" id="inputNumber" />
+                                        </div>
+                                        <div class="form-group col col-12 col-sm-6">
+                                            <label for="inputPassword">Password</label>
+                                            <input type="password" id="inputPassword" />
+                                        </div>
+                                        <div class="form-group radiocheck col col-12 col-sm-6">
+                                            <label for="inputRadio">Radio</label>
+                                            <input type="radio" id="inputRadio" />
+                                        </div>
+                                        <div class="form-group col col-12 col-sm-6">
+                                            <label for="inputRange">Range</label>
+                                            <input type="range" id="inputRange" />
+                                        </div>
+                                        <div class="form-group col col-12 col-sm-6">
+                                            <label for="inputSearch">Search</label>
+                                            <input type="search" id="inputSearch" />
+                                        </div>
+                                        <div class="form-group col col-12 col-sm-6">
+                                            <label for="inputSelect">Select</label>
+                                            <select id="inputSelect">
+                                                <option value="1">First</option>
+                                                <option value="2">Second</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group col col-12 col-sm-6">
+                                            <label for="inputTel">Tel</label>
+                                            <input type="tel" id="inputTel" />
+                                        </div>
+                                        <div class="form-group col col-12 col-sm-6">
+                                            <label for="inputText">Text</label>
+                                            <input type="text" id="inputText" />
+                                        </div>
+                                        <div class="form-group col col-12 col-sm-6">
+                                            <label for="inputTime">Time</label>
+                                            <input type="time" id="inputTime" />
+                                        </div>
+                                        <div class="form-group col col-12 col-sm-6">
+                                            <label for="inputUrl">Url</label>
+                                            <input type="url" id="inputUrl" />
+                                        </div>
+                                        <div class="form-group col col-12 col-sm-6">
+                                            <label for="inputWeek">Week</label>
+                                            <input type="week" id="inputWeek" />
+                                        </div>
+                                        <div class="form-group col col-12 col-sm-6">
+                                            <label for="inputTextarea">Textarea</label>
+                                            <textarea rows="3" id="inputTextarea"></textarea>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
                         </div>
                     </div>
 
@@ -1011,5 +1099,80 @@
         <div class="back-to-top-wrapper d-sm-none d-xs-none">
             <a href="#top" class="back-to-top-link sticky">Top</a>
         </div>
+        <style>
+            nav {
+	            margin: 0 auto; 
+	            text-align: left;
+            }
+
+            nav ul ul {
+                display: none;
+            }
+
+            nav ul li:hover > ul {
+                display: block;
+            }
+
+            nav ul {
+                background: #efefef; 
+                background: linear-gradient(top, #efefef 0%, #bbbbbb 100%);  
+                background: -moz-linear-gradient(top, #efefef 0%, #bbbbbb 100%); 
+                background: -webkit-linear-gradient(top, #efefef 0%,#bbbbbb 100%); 
+                box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
+                padding: 0 20px;
+                border-radius: 10px;  
+                list-style: none;
+                position: relative;
+                display: inline-table;
+            }
+
+            nav ul:after {
+                content: ""; clear: both; display: block;
+            }
+
+            nav ul li {
+                float: left;
+            }
+
+            nav ul li:hover {
+                background: #4b545f;
+                background: linear-gradient(top, #4f5964 0%, #5f6975 40%);
+                background: -moz-linear-gradient(top, #4f5964 0%, #5f6975 40%);
+                background: -webkit-linear-gradient(top, #4f5964 0%,#5f6975 40%);
+            }
+
+			nav ul li:hover a {
+				color: #fff;
+			}
+		
+            nav ul li a {
+                display: block; padding: 25px 40px;
+                color: #757575; text-decoration: none;
+            }
+					
+            nav ul ul {
+                background: #5f6975; border-radius: 0px; padding: 0;
+                position: absolute; top: 100%;
+            }
+
+            nav ul ul li {
+                float: none; 
+                border-top: 1px solid #6b727c;
+                border-bottom: 1px solid #575f6a; position: relative;
+            }
+
+			nav ul ul li a {
+				padding: 15px 40px;
+				color: #fff;
+			}	
+
+			nav ul ul li a:hover {
+				background: #4b545f;
+			}
+		
+            nav ul ul ul {
+                position: absolute; left: 100%; top:0;
+            }
+        </style>
     </body>
 </html>
