@@ -1,0 +1,39 @@
+.card {
+    background-color: @card-background-color;
+    border: @border-width solid @border-color;
+
+    &.rounded {
+        .card-header {
+            &:first-child {
+                border-radius: calc(@border-radius - 1px) calc(@border-radius - 1px) 0 0;
+            }
+        }
+
+        .card-footer {
+            &:last-child {
+                border-radius: 0 0 calc(@border-radius - 1px) calc(@border-radius - 1px);
+            }
+        }
+    }
+}
+
+.card-header {
+    padding: @space-1 @space-2;
+    margin-bottom: 0;
+    background-color: darken(@card-background-color, 3%);
+    border-bottom: @border-width solid @border-color;
+}
+
+.card-body {
+    padding: @space-2;
+}
+
+.card-title {
+    margin-bottom: @space-1;
+}
+
+.card-footer {
+    padding: @space-1 @space-2;
+    background-color: darken(@card-background-color, 3%);
+    border-top: @border-width solid @border-color;
+}

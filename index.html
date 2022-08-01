@@ -1,1178 +1,1408 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Lucy - CSS framework</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="lucy.css">
-        <link rel="stylesheet" type="text/css" href="custom.css">
-    </head>
-    <body>
-        <div id="top" class="container-fluid">
-            <nav class="mt-0 sticky">
-                <ul id="minimenu">
-                    <li><a href="#t">Thypography</a>
+
+<head>
+    <title>Lucy - CSS framework</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="lucy.css">
+    <link rel="stylesheet" type="text/css" href="custom.css">
+</head>
+
+<body>
+    <div id="top" class="container-fluid">
+        <nav class="mt-0 sticky">
+            <ul id="minimenu">
+                <li><a href="#t">Thypography</a>
+                    <ul>
+                        <li><a href="#th">Headers</a></li>
+                        <li><a href="#tt">Text</a>
+                            <ul>
+                                <li><a href="#ttp">Pangram</a></li>
+                                <li><a href="#ttf">Format</a></li>
+                                <li><a href="#ttta">Text align</a></li>
+                                <li><a href="#ttva">Vertical align</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#ts">Tooltips</a></li>
+                    </ul>
+                </li>
+                <li><a href="#g">Grid</a>
+                    <ul>
+                        <li><a href="#gas">Auto size columns</a></li>
+                        <li><a href="#gf">Fixed width column</a></li>
+                        <li><a href="#gsb">Spaces between columns</a></li>
+                        <li><a href="#go">Offset</a></li>
+                        <li><a href="#gc">Center</a></li>
+                        <li><a href="#gr">Right</a></li>
+                        <li><a href="#grw">Row with two breaks</a></li>
+                        <li><a href="#gb">Breakpoints</a></li>
+                        <li><a href="#gbo">Border</a></li>
+                        <li><a href="#gw">Width</a></li>
+                    </ul>
+                </li>
+                <li><a href="#b">Buttons</a>
+                    <ul>
+                        <li><a href="#bl">Large</a></li>
+                        <li><a href="#bb">Basic</a></li>
+                        <li><a href="#bs">Small</a></li>
+                    </ul>
+                </li>
+                <li><a href="#l">List</a></li>
+                <li><a href="#f">Forms</a>
+                    <ul>
+                        <li><a href="#fc">Clasic form</a></li>
+                        <li><a href="#fi">Inline form</a></li>
+                        <li><a href="#ff">Floating form</a></li>
+                    </ul>
+                </li>
+                <li><a href="#i">Images</a>
+                    <ul>
+                        <li><a href="#i169">16:9</a></li>
+                        <li><a href="#i43">4:3</a></li>
+                        <li><a href="#i32">3:2</a></li>
+                        <li><a href="#i31">3:1</a></li>
+                        <li><a href="#i11">1:1</a></li>
+                    </ul>
+                </li>
+                <li><a href="#c">Card</a></li>
+            </ul>
+        </nav>
+        <h1 class="text-shadow mt-3 mb-2">Hi, I am Lucy - CSS framework</h1>
+        <div class="row">
+            <div class="col col-12">
+                <h2 id="t" class="anchor mb-2">Thypography</h2>
+                <h3 id="th" class="anchor mb-2">Headers</h3>
+                <div class="row mb-3">
+                    <div class="col">
+                        <h1>H1 - Lorem ipsum dolor sit amet.</h1>
+                        <h2>H2 - Lorem ipsum dolor sit amet.</h2>
+                        <h3>H3 - Lorem ipsum dolor sit amet.</h3>
+                        <h4>H4 - Lorem ipsum dolor sit amet.</h4>
+                        <h5>H5 - Lorem ipsum dolor sit amet.</h5>
+                        <h6>H6 - Lorem ipsum dolor sit amet.</h6>
+                    </div>
+                </div>
+                <h3 id="tt" class="anchor mb-2">Text</h3>
+                <div class="row mb-3">
+                    <h4 id="ttp" class="anchor mb-2">Pangram</h4>
+                    <div class="col">Nezvyčajné kŕdle šťastných figliarskych ďatľov učia pri kótovanom ústí Váhu mĺkveho
+                        koňa Waldemara obžierať väčšie kusy exkluzívnej kôry.</div>
+                </div>
+                <div class="row mb-3">
+                    <h4 id="ttf" class="anchor mb-2">Format</h4>
+                    <div class="col">
+                        <p class="text-bold">Bold text - Lorem ipsum dolor sit amet.</p>
+                        <p class="text-italic">Italic text - Lorem ipsum dolor sit amet.</p>
+                        <p class="text-overline">Overline text - Lorem ipsum dolor sit amet.</p>
+                        <p class="text-through">Through text - Lorem ipsum dolor sit amet.</p>
+                        <p class="text-underline">Underline text - Lorem ipsum dolor sit amet.</p>
+                        <p class="text-uppercase">Uppercase text - Lorem ipsum dolor sit amet.</p>
+                        <p class="text-lowercase">Lowercase text - Lorem ipsum dolor sit amet.</p>
+                        <p class="text-capitalize">Capitalize text - Lorem ipsum dolor sit amet.</p>
+                        <p class="text-shadow">Shadow text - Lorem ipsum dolor sit amet.</p>
+                        <p class="text-muted">Muted text - Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <h4 id="ttta" class="anchor mb-2">Text align</h4>
+                    <div class="col border text-left">
+                        <h5>Left</h5>Phasellus viverra tortor sapien, vel lobortis mauris feugiat tempor. Morbi nec
+                        augue sagittis, condimentum risus eu, volutpat nunc.
+                    </div>
+                    <div class="col border text-center">
+                        <h5>Center</h5>Phasellus viverra tortor sapien, vel lobortis mauris feugiat tempor. Morbi nec
+                        augue sagittis, condimentum risus eu, volutpat nunc.
+                    </div>
+                    <div class="col border text-justify">
+                        <h5>Justify</h5>Phasellus viverra tortor sapien, vel lobortis mauris feugiat tempor. Morbi nec
+                        augue sagittis, condimentum risus eu, volutpat nunc.
+                    </div>
+                    <div class="col border text-right">
+                        <h5>Right</h5>Phasellus viverra tortor sapien, vel lobortis mauris feugiat tempor. Morbi nec
+                        augue sagittis, condimentum risus eu, volutpat nunc.
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <h4 id="ttva" class="anchor mb-2">Vertical align</h4>
+                    <div class="col border ">Phasellus viverra tortor sapien, vel lobortis mauris feugiat tempor. Morbi
+                        nec augue sagittis, condimentum risus eu, volutpat nunc.</div>
+                    <div class="col border align-v-top">
+                        <h5>Top</h5>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="col border align-v-center">
+                        <h5>Center</h5>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <div class="col border align-v-bottom">
+                        <h5>Bottom</h5>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <h4 id="ts" class="mb-2">Tooltips</h4>
+                    <div class="col col-12 col-sm text-center">
+                        <span class="tooltip tooltip-up"
+                            aria-label="Suspendisse pulvinar ultricies urna, sit amet volutpat sapien rhoncus quis.">Up</span>
+                    </div>
+                    <div class="col col-12 col-sm text-center">
+                        <span class="tooltip tooltip-up-left tooltip-sm"
+                            aria-label="Suspendisse pulvinar ultricies urna, sit amet volutpat sapien rhoncus quis.">Up
+                            left</span>
+                    </div>
+                    <div class="col col-12 col-sm text-center">
+                        <span class="tooltip tooltip-up-right tooltip-md"
+                            aria-label="Suspendisse pulvinar ultricies urna, sit amet volutpat sapien rhoncus quis.">Up
+                            right</span>
+                    </div>
+                    <div class="col col-12 col-sm text-center">
+                        <span class="tooltip tooltip-right tooltip-lg"
+                            aria-label="Suspendisse pulvinar ultricies urna, sit amet volutpat sapien rhoncus quis.">Right</span>
+                    </div>
+                    <div class="col col-12 col-sm text-center">
+                        <span class="tooltip tooltip-down tooltip-xl"
+                            aria-label="Suspendisse pulvinar ultricies urna, sit amet volutpat sapien rhoncus quis.">Down</span>
+                    </div>
+                    <div class="col col-12 col-sm text-center">
+                        <span class="tooltip tooltip-down-left tooltip-fit"
+                            aria-label="Suspendisse pulvinar ultricies urna, sit amet volutpat sapien rhoncus quis.">Down
+                            left</span>
+                    </div>
+                    <div class="col col-12 col-sm text-center">
+                        <span class="tooltip tooltip-down-right"
+                            aria-label="Suspendisse pulvinar ultricies urna, sit amet volutpat sapien rhoncus quis.">Down
+                            right</span>
+                    </div>
+                    <div class="col col-12 col-sm text-center">
+                        <span class="tooltip tooltip-left"
+                            aria-label="Suspendisse pulvinar ultricies urna, sit amet volutpat sapien rhoncus quis.">Left</span>
+                    </div>
+                </div>
+
+                <h2 id="g" class="mb-2">Grid</h2>
+                <h3 id="gas" class="mb-2">Auto size columns</h3>
+                <div class="row mb-1">
+                    <div class="col border text-center">
+                        <p class="p-0 m-0">col</p>
+                    </div>
+                </div>
+                <div class="row mb-1">
+                    <div class="col border text-center">
+                        <p class="p-0 m-0">col</p>
+                    </div>
+                    <div class="col border text-center">
+                        <p class="p-0 m-0">col</p>
+                    </div>
+                </div>
+                <div class="row mb-1">
+                    <div class="col border text-center">
+                        <p class="p-0 m-0">col</p>
+                    </div>
+                    <div class="col border text-center">
+                        <p class="p-0 m-0">col</p>
+                    </div>
+                    <div class="col border text-center">
+                        <p class="p-0 m-0">col</p>
+                    </div>
+                </div>
+                <div class="row mb-1">
+                    <div class="col border text-center">
+                        <p class="p-0 m-0">col</p>
+                    </div>
+                    <div class="col border text-center">
+                        <p class="p-0 m-0">col</p>
+                    </div>
+                    <div class="col border text-center">
+                        <p class="p-0 m-0">col</p>
+                    </div>
+                    <div class="col border text-center">
+                        <p class="p-0 m-0">col</p>
+                    </div>
+                </div>
+                <div class="row mb-1">
+                    <div class="col border text-center">
+                        <p class="p-0 m-0">col</p>
+                    </div>
+                    <div class="col border text-center">
+                        <p class="p-0 m-0">col</p>
+                    </div>
+                    <div class="col border text-center">
+                        <p class="p-0 m-0">col</p>
+                    </div>
+                    <div class="col border text-center">
+                        <p class="p-0 m-0">col</p>
+                    </div>
+                    <div class="col border text-center">
+                        <p class="p-0 m-0">col</p>
+                    </div>
+                </div>
+                <div class="row mb-1">
+                    <div class="col border text-center">
+                        <p class="p-0 m-0">col</p>
+                    </div>
+                    <div class="col border text-center">
+                        <p class="p-0 m-0">col</p>
+                    </div>
+                    <div class="col border text-center">
+                        <p class="p-0 m-0">col</p>
+                    </div>
+                    <div class="col border text-center">
+                        <p class="p-0 m-0">col</p>
+                    </div>
+                    <div class="col border text-center">
+                        <p class="p-0 m-0">col</p>
+                    </div>
+                    <div class="col border text-center">
+                        <p class="p-0 m-0">col</p>
+                    </div>
+                </div>
+                <div class="row mb-1">
+                    <div class="col border text-center">
+                        <p class="p-0 m-0">col</p>
+                    </div>
+                    <div class="col border text-center">
+                        <p class="p-0 m-0">col</p>
+                    </div>
+                    <div class="col border text-center">
+                        <p class="p-0 m-0">col</p>
+                    </div>
+                    <div class="col border text-center">
+                        <p class="p-0 m-0">col</p>
+                    </div>
+                    <div class="col border text-center">
+                        <p class="p-0 m-0">col</p>
+                    </div>
+                    <div class="col border text-center">
+                        <p class="p-0 m-0">col</p>
+                    </div>
+                    <div class="col border text-center">
+                        <p class="p-0 m-0">col</p>
+                    </div>
+                    <div class="col border text-center">
+                        <p class="p-0 m-0">col</p>
+                    </div>
+                    <div class="col border text-center">
+                        <p class="p-0 m-0">col</p>
+                    </div>
+                    <div class="col border text-center">
+                        <p class="p-0 m-0">col</p>
+                    </div>
+                    <div class="col border text-center">
+                        <p class="p-0 m-0">col</p>
+                    </div>
+                    <div class="col border text-center">
+                        <p class="p-0 m-0">col</p>
+                    </div>
+                </div>
+
+                <h3 id="gf" class="mt-2 mb-2">Fixed width column</h3>
+                <div class="row mb-1">
+                    <div class="col col-12 border text-center">
+                        <p class="p-0 m-0">12 col</p>
+                    </div>
+                </div>
+                <div class="row mb-1">
+                    <div class="col border text-center">
+                        <p class="p-0 m-0">col</p>
+                    </div>
+                    <div class="col col-11 border text-center">
+                        <p class="p-0 m-0">11 col</p>
+                    </div>
+                </div>
+                <div class="row mb-1">
+                    <div class="col border text-center">
+                        <p class="p-0 m-0">col</p>
+                    </div>
+                    <div class="col col-10 border text-center">
+                        <p class="p-0 m-0">10 col</p>
+                    </div>
+                </div>
+                <div class="row mb-1">
+                    <div class="col border text-center">
+                        <p class="p-0 m-0">col</p>
+                    </div>
+                    <div class="col col-9 border text-center">
+                        <p class="p-0 m-0">9 col</p>
+                    </div>
+                </div>
+                <div class="row mb-1">
+                    <div class="col border text-center">
+                        <p class="p-0 m-0">col</p>
+                    </div>
+                    <div class="col col-8 border text-center">
+                        <p class="p-0 m-0">8 col</p>
+                    </div>
+                </div>
+                <div class="row mb-1">
+                    <div class="col border text-center">
+                        <p class="p-0 m-0">col</p>
+                    </div>
+                    <div class="col col-7 border text-center">
+                        <p class="p-0 m-0">7 col</p>
+                    </div>
+                </div>
+                <div class="row mb-1">
+                    <div class="col border text-center">
+                        <p class="p-0 m-0">col</p>
+                    </div>
+                    <div class="col col-6 border text-center">
+                        <p class="p-0 m-0">6 col</p>
+                    </div>
+                </div>
+                <div class="row mb-1">
+                    <div class="col border text-center">
+                        <p class="p-0 m-0">col</p>
+                    </div>
+                    <div class="col col-5 border text-center">
+                        <p class="p-0 m-0">5 col</p>
+                    </div>
+                </div>
+                <div class="row mb-1">
+                    <div class="col border text-center">
+                        <p class="p-0 m-0">col</p>
+                    </div>
+                    <div class="col col-4 border text-center">
+                        <p class="p-0 m-0">4 col</p>
+                    </div>
+                </div>
+                <div class="row mb-1">
+                    <div class="col border text-center">
+                        <p class="p-0 m-0">col</p>
+                    </div>
+                    <div class="col col-3 border text-center">
+                        <p class="p-0 m-0">3 col</p>
+                    </div>
+                </div>
+                <div class="row mb-1">
+                    <div class="col border text-center">
+                        <p class="p-0 m-0">col</p>
+                    </div>
+                    <div class="col col-2 border text-center">
+                        <p class="p-0 m-0">2 col</p>
+                    </div>
+                </div>
+                <div class="row mb-1">
+                    <div class="col border text-center">
+                        <p class="p-0 m-0">col</p>
+                    </div>
+                    <div class="col col-1 border text-center">
+                        <p class="p-0 m-0">1 col</p>
+                    </div>
+                </div>
+                <div class="row mb-1">
+                    <div class="col border text-center">
+                        <p class="p-0 m-0">col</p>
+                    </div>
+                    <div class="col col-5 border text-center">
+                        <p class="p-0 m-0">5 col</p>
+                    </div>
+                    <div class="col border text-center">
+                        <p class="p-0 m-0">col</p>
+                    </div>
+                </div>
+
+                <h3 id="gsb" class="mt-2 mb-2">Spaces between columns</h3>
+                <div class="row mb-1">
+                    <div class="col col-3 border text-center">
+                        <p class="p-0 m-0">3 col</p>
+                    </div>
+                    <div class="col col-3 border text-center">
+                        <p class="p-0 m-0">No space defined</p>
+                    </div>
+                    <div class="col col-3 border text-center">
+                        <p class="p-0 m-0">3 col</p>
+                    </div>
+                </div>
+                <div class="row space-around mb-1">
+                    <div class="col col-3 border text-center">
+                        <p class="p-0 m-0">3 col</p>
+                    </div>
+                    <div class="col col-3 border text-center">
+                        <p class="p-0 m-0">Space around</p>
+                    </div>
+                    <div class="col col-3 border text-center">
+                        <p class="p-0 m-0">3 col</p>
+                    </div>
+                </div>
+                <div class="row space-between mb-1">
+                    <div class="col col-3 border text-center">
+                        <p class="p-0 m-0">3 col</p>
+                    </div>
+                    <div class="col col-3 border text-center">
+                        <p class="p-0 m-0">Space between</p>
+                    </div>
+                    <div class="col col-3 border text-center">
+                        <p class="p-0 m-0">3 col</p>
+                    </div>
+                </div>
+                <div class="row space-evenly mb-1">
+                    <div class="col col-3 border text-center">
+                        <p class="p-0 m-0">3 col</p>
+                    </div>
+                    <div class="col col-3 border text-center">
+                        <p class="p-0 m-0">Space evenly</p>
+                    </div>
+                    <div class="col col-3 border text-center">
+                        <p class="p-0 m-0">3 col</p>
+                    </div>
+                </div>
+
+                <h3 id="go" class="mt-2 mb-2">Offset</h3>
+                <div class="row mb-3">
+                    <div class="col col-6 offset-3 offset-lg-3 offset-sm-1 border text-center shadow">Offset 3</div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col col-3 offset-lg-8 offset-sm-4 border text-center shadow">Offset 8</div>
+                </div>
+
+                <h3 id="gc" class="mt-2 mb-2">Center</h3>
+                <div class="row flex-center mb-3">
+                    <div class="col col-5 border text-center shadow">Center</div>
+                </div>
+
+                <h3 id="gr" class="mt-2 mb-2">Right</h3>
+                <div class="row flex-end mb-3">
+                    <div class="col col-2 border text-center shadow">1. col</div>
+                    <div class="col col-2 border text-center shadow">2. col</div>
+                </div>
+
+                <h3 id="grw" class="mt-2 mb-2">Row with two breaks</h3>
+                <div class="row mb-3">
+                    <div class="col border text-center">col</div>
+                    <div class="col border text-center">col</div>
+                    <div class="w-100"></div>
+                    <div class="col border text-center">col</div>
+                    <div class="col border text-center">col</div>
+                    <div class="col border text-center">col</div>
+                    <div class="w-100"></div>
+                    <div class="col border text-center">col</div>
+                    <div class="col border text-center">col</div>
+                </div>
+
+                <h3 id="gb" class="mt-2 mb-2">Breakpoints</h3>
+                <h4 class="mb-1 d-none d-xs-block">XS breakpoint</h4>
+                <h4 class="mb-1 d-none d-sm-block">SM breakpoint</h4>
+                <h4 class="mb-1 d-none d-md-block">MD breakpoint</h4>
+                <h4 class="mb-1 d-none d-lg-block">LG breakpoint</h4>
+                <h4 class="mb-1 d-none d-xl-block">XL breakpoint</h4>
+                <div class="row mb-3">
+                    <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 border">col-12 col-sm-6 col-md-4 col-lg-3
+                        col-xl-2</div>
+                    <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 border">col-12 col-sm-6 col-md-4 col-lg-3
+                        col-xl-2</div>
+                    <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 border">col-12 col-sm-6 col-md-4 col-lg-3
+                        col-xl-2</div>
+                    <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 border">col-12 col-sm-6 col-md-4 col-lg-3
+                        col-xl-2</div>
+                    <div class="col col-12 col-sm-6 col-md-4 col-lg-6 col-xl-2 border">col-12 col-sm-6 col-md-4 col-lg-6
+                        col-xl-2</div>
+                    <div class="col col-12 col-sm-6 col-md-4 col-lg-6 col-xl-2 border">col-12 col-sm-6 col-md-4 col-lg-6
+                        col-xl-2</div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col col-12 col-sm-6 border">col-12 col-sm-6</div>
+                    <div class="col col-12 col-sm-6 border">col-12 col-sm-6</div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col col-6 col-md-4 border">col-6 col-md-4</div>
+                    <div class="col col-6 col-md-4 border">col-6 col-md-4</div>
+                    <div class="col col-12 col-md-4 border">col-12 col-md-4</div>
+                </div>
+
+                <h3 id="gbo" class="mt-2 mb-2">Border</h3>
+                <div class="row mb-3">
+                    <div class="col">
+                        <p class="border text-center">border</p>
+                    </div>
+                    <div class="col">
+                        <p class="border-top text-center">border top</p>
+                    </div>
+                    <div class="col">
+                        <p class="border-right text-center">border right</p>
+                    </div>
+                    <div class="col">
+                        <p class="border-bottom text-center">border bottom</p>
+                    </div>
+                    <div class="col">
+                        <p class="border-left text-center">border left</p>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <p class="border rounded text-center">border rounded</p>
+                    </div>
+                    <div class="col">
+                        <p class="border rounded-top text-center">border rounded top</p>
+                    </div>
+                    <div class="col">
+                        <p class="border rounded-right text-center">border rounded right</p>
+                    </div>
+                    <div class="col">
+                        <p class="border rounded-bottom text-center">border rounded bottom</p>
+                    </div>
+                    <div class="col">
+                        <p class="border rounded-left text-center">border rounded left</p>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <p class="border rounded-top-left text-center">border rounded top left</p>
+                    </div>
+                    <div class="col">
+                        <p class="border rounded-top-right text-center">border rounded top right</p>
+                    </div>
+                    <div class="col">
+                        <p class="border rounded-bottom-left text-center">border rounded bottom left</p>
+                    </div>
+                    <div class="col">
+                        <p class="border rounded-bottom-right text-center">border rounded bottom right</p>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <p class="border circle text-center pt-4" style="width: 150px; height:calc(150px - 4rem);">
+                            border circle
+                        </p>
+                    </div>
+                    <div class="col">
+                        <p class="border circle text-center shadow pt-3"
+                            style="width: 150px; height:calc(150px - 2rem);">
+                            border circle shadow
+                        </p>
+                    </div>
+                    <div class="col align-v-center">
+                        <p class="border shadow text-center">border shadow</p>
+                    </div>
+                    <div class="col align-v-center">
+                        <p class="shadow text-center">shadow</p>
+                    </div>
+                </div>
+
+                <h3 id="gw" class="mt-2 mb-2">Width</h3>
+                <div class="row mb-3">
+                    <div class="col">
+                        <p class="w-10 border">10%</p>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <p class="w-33 border">33%</p>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <p class="w-75 border">75%</p>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <p class="w-100 border">100%</p>
+                    </div>
+                </div>
+
+                <h2 id="b" class="mb-2">Buttons</h2>
+                <div class="row mb-1">
+                    <div class="col col-12 col-sm text-center p-1">
+                        <button>Button</button>
+                    </div>
+                    <div class="col col-12 col-sm text-center p-1">
+                        <button class="rounded">Rounded</button>
+                    </div>
+                    <div class="col col-12 col-sm text-center p-1">
+                        <button class="natural">Natural</button>
+                    </div>
+                    <div class="col col-12 col-sm text-center p-1">
+                        <a href="#" class="button">Anchor</a>
+                    </div>
+                    <div class="col col-12 col-sm text-center p-1">
+                        <button class="disabled">Disabled</button>
+                    </div>
+                </div>
+                <div class="row mb-1">
+                    <div class="col col-12 col-sm text-center p-1">
+                        <button class="ghost">Ghost</button>
+                    </div>
+                    <div class="col col-12 col-sm text-center p-1">
+                        <button class="ghost rounded">Rounded</button>
+                    </div>
+                    <div class="col col-12 col-sm text-center p-1">
+                        <button class="ghost natural">Natural</button>
+                    </div>
+                    <div class="col col-12 col-sm text-center p-1">
+                        <a href="#" class="button ghost">Anchor</a>
+                    </div>
+                    <div class="col col-12 col-sm text-center p-1">
+                        <button class="ghost disabled">Disabled</button>
+                    </div>
+                </div>
+                <div class="row mb-1">
+                    <div class="col col-12 col-sm text-center p-1">
+                        <button class="link">Link</button>
+                    </div>
+                    <div class="col col-12 col-sm text-center p-1">
+                        <button class="link rounded">Rounded</button>
+                    </div>
+                    <div class="col col-12 col-sm text-center p-1">
+                        <button class="link natural">Natural</button>
+                    </div>
+                    <div class="col col-12 col-sm text-center p-1">
+                        <a href="#" class="button link">Anchor</a>
+                    </div>
+                    <div class="col col-12 col-sm text-center p-1">
+                        <button class="link disabled">Disabled</button>
+                    </div>
+                </div>
+                <h3 id="bl" class="mt-2 mb-2">Large</h3>
+                <div class="row mb-1">
+                    <div class="col col-12 col-sm-3 text-center p-1">
+                        <button class="large">Button</button>
+                    </div>
+                    <div class="col col-12 col-sm-3 text-center p-1">
+                        <button class="large ghost">Ghost</button>
+                    </div>
+                    <div class="col col-12 col-sm-3 text-center p-1">
+                        <button class="large link">Link</button>
+                    </div>
+                    <div class="col col-12 col-sm-3 text-center p-1">
+                        <a href="#" class="button large">Anchor</a>
+                    </div>
+                </div>
+                <h3 id="bb" class="mt-2 mb-2">Basic</h3>
+                <div class="row mb-1">
+                    <div class="col col-6 col-sm-3 text-center p-1">
+                        <button>Button</button>
+                    </div>
+                    <div class="col col-6 col-sm-3 text-center p-1">
+                        <button class="ghost">Ghost</button>
+                    </div>
+                    <div class="col col-6 col-sm-3 text-center p-1">
+                        <button class="link">Link</button>
+                    </div>
+                    <div class="col col-6 col-sm-3 text-center p-1">
+                        <a href="#" class="button">Anchor</a>
+                    </div>
+                </div>
+                <h3 id="bs" class="mt-2 mb-2">Small</h3>
+                <div class="row mb-1">
+                    <div class="col col-6 col-sm-3 text-center p-1">
+                        <button class="small">Button</button>
+                    </div>
+                    <div class="col col-6 col-sm-3 text-center p-1">
+                        <button class="small ghost">Ghost</button>
+                    </div>
+                    <div class="col col-6 col-sm-3 text-center p-1">
+                        <button class="small link">Link</button>
+                    </div>
+                    <div class="col col-6 col-sm-3 text-center p-1">
+                        <a href="#" class="button small">Anchor</a>
+                    </div>
+                </div>
+
+                <h3 id="l" class="mb-2">List</h3>
+                <div class="row mb-3">
+                    <div class="col p-2">
+                        <h4 class="mb-1">Unordered list</h4>
+                        <ul class="mb-2">
+                            <li>Default</li>
+                            <li>Two</li>
+                            <li>Three</li>
+                            <li>Four</li>
+                        </ul>
+                        <ul class="list-circle mb-2">
+                            <li>Circle</li>
+                            <li>Two</li>
+                            <li>Three</li>
+                            <li>Four</li>
+                        </ul>
+                        <ul class="list-square mb-2">
+                            <li>Square</li>
+                            <li>Two</li>
+                            <li>Three</li>
+                            <li>Four</li>
+                        </ul>
+                        <ul class="list-bullet mb-2">
+                            <li>Bullet</li>
+                            <li>Two</li>
+                            <li>Three</li>
+                            <li>Four</li>
+                        </ul>
+                        <ul class="list-dash mb-2">
+                            <li>Dash</li>
+                            <li>Two</li>
+                            <li>Three</li>
+                            <li>Four</li>
+                        </ul>
                         <ul>
-                            <li><a href="#th">Headers</a></li>
-                            <li><a href="#tt">Text</a>
+                            <li>Nested</li>
+                            <li>Two</li>
+                            <li>Three
                                 <ul>
-                                    <li><a href="#ttp">Pangram</a></li>
-                                    <li><a href="#ttf">Format</a></li>
-                                    <li><a href="#ttta">Text align</a></li>
-                                    <li><a href="#ttva">Vertical align</a></li>
+                                    <li>Second level</li>
+                                    <li>Two</li>
+                                    <li>Three
+                                        <ul>
+                                            <li>Third level</li>
+                                            <li>Two</li>
+                                        </ul>
+                                    </li>
                                 </ul>
                             </li>
-                            <li><a href="#ts">Tooltips</a></li>
                         </ul>
-                    </li>
-                    <li><a href="#g">Grid</a>
-                        <ul>
-                            <li><a href="#gas">Auto size columns</a></li>
-                            <li><a href="#gf">Fixed width column</a></li>
-                            <li><a href="#gsb">Spaces between columns</a></li>
-                            <li><a href="#go">Offset</a></li>
-                            <li><a href="#gc">Center</a></li>
-                            <li><a href="#gr">Right</a></li>
-                            <li><a href="#grw">Row with two breaks</a></li>
-                            <li><a href="#gb">Breakpoints</a></li>
-                            <li><a href="#gbo">Border</a></li>
-                            <li><a href="#gw">Width</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#b">Buttons</a>
-                        <ul>
-                            <li><a href="#bl">Large</a></li>
-                            <li><a href="#bb">Basic</a></li>
-                            <li><a href="#bs">Small</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#l">List</a></li>
-                    <li><a href="#f">Forms</a>
-                        <ul>
-                            <li><a href="#fc">Clasic form</a></li>
-                            <li><a href="#fi">Inline form</a></li>
-                            <li><a href="#ff">Floating form</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#i">Images</a>
-                        <ul>
-                            <li><a href="#i169">16:9</a></li>
-                            <li><a href="#i43">4:3</a></li>
-                            <li><a href="#i32">3:2</a></li>
-                            <li><a href="#i31">3:1</a></li>
-                            <li><a href="#i11">1:1</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-            <h1 class="text-shadow mt-3 mb-2">Hi, I am Lucy - CSS framework</h1>
-            <div class="row">
-                <div class="col col-12">
-                    <h2 id="t" class="anchor mb-2">Thypography</h2>
-                    <h3 id="th" class="anchor mb-2">Headers</h3>
-                    <div class="row mb-3">
-                        <div class="col">
-                            <h1>H1 - Lorem ipsum dolor sit amet.</h1>
-                            <h2>H2 - Lorem ipsum dolor sit amet.</h2>
-                            <h3>H3 - Lorem ipsum dolor sit amet.</h3>
-                            <h4>H4 - Lorem ipsum dolor sit amet.</h4>
-                            <h5>H5 - Lorem ipsum dolor sit amet.</h5>
-                            <h6>H6 - Lorem ipsum dolor sit amet.</h6>
-                        </div>
                     </div>
-                    <h3 id="tt" class="anchor mb-2">Text</h3>
-                    <div class="row mb-3">
-                        <h4 id="ttp" class="anchor mb-2">Pangram</h4>
-                        <div class="col">Nezvyčajné kŕdle šťastných figliarskych ďatľov učia pri kótovanom ústí Váhu mĺkveho koňa Waldemara obžierať väčšie kusy exkluzívnej kôry.</div>
+                    <div class="col p-2">
+                        <h4 class="mb-1">Ordered list</h4>
+                        <ol class="mb-2">
+                            <li>Default</li>
+                            <li>Two</li>
+                            <li>Three</li>
+                            <li>Four</li>
+                        </ol>
+                        <ol class="list-lower-greek mb-2">
+                            <li>Lower greek</li>
+                            <li>Two</li>
+                            <li>Three</li>
+                        </ol>
+                        <ol class="list-lower-latin mb-2">
+                            <li>Lower latin</li>
+                            <li>Two</li>
+                            <li>Three</li>
+                        </ol>
+                        <ol class="list-lower-roman mb-2">
+                            <li>Lower roman</li>
+                            <li>Two</li>
+                            <li>Three</li>
+                        </ol>
+                        <ol class="list-upper-alpha mb-2">
+                            <li>Upper alpha</li>
+                            <li>Two</li>
+                            <li>Three</li>
+                        </ol>
+                        <ol class="list-upper-latin mb-2">
+                            <li>Upper latin</li>
+                            <li>Two</li>
+                            <li>Three</li>
+                        </ol>
+                        <ol class="list-upper-roman mb-2">
+                            <li>Upper roman</li>
+                            <li>Two</li>
+                            <li>Three</li>
+                        </ol>
+                        <ol>
+                            <li>Nested</li>
+                            <li>Two</li>
+                            <li>Three
+                                <ol>
+                                    <li>One</li>
+                                    <li>Two</li>
+                                    <li>Three
+                                        <ol>
+                                            <li>One</li>
+                                            <li>Two</li>
+                                        </ol>
+                                    </li>
+                                </ol>
+                            </li>
+                        </ol>
                     </div>
-                    <div class="row mb-3">
-                        <h4 id="ttf" class="anchor mb-2">Format</h4>
-                        <div class="col">
-                            <p class="text-bold">Bold text - Lorem ipsum dolor sit amet.</p>
-                            <p class="text-italic">Italic text - Lorem ipsum dolor sit amet.</p>
-                            <p class="text-overline">Overline text - Lorem ipsum dolor sit amet.</p>
-                            <p class="text-through">Through text - Lorem ipsum dolor sit amet.</p>
-                            <p class="text-underline">Underline text - Lorem ipsum dolor sit amet.</p>
-                            <p class="text-uppercase">Uppercase text - Lorem ipsum dolor sit amet.</p>
-                            <p class="text-lowercase">Lowercase text - Lorem ipsum dolor sit amet.</p>
-                            <p class="text-capitalize">Capitalize text - Lorem ipsum dolor sit amet.</p>
-                            <p class="text-shadow">Shadow text - Lorem ipsum dolor sit amet.</p>
-                        </div>
-                    </div>
-                    <div class="row mb-3">
-                        <h4 id="ttta" class="anchor mb-2">Text align</h4>
-                        <div class="col border text-left"><h5>Left</h5>Phasellus viverra tortor sapien, vel lobortis mauris feugiat tempor. Morbi nec augue sagittis, condimentum risus eu, volutpat nunc.</div>
-                        <div class="col border text-center"><h5>Center</h5>Phasellus viverra tortor sapien, vel lobortis mauris feugiat tempor. Morbi nec augue sagittis, condimentum risus eu, volutpat nunc.</div>
-                        <div class="col border text-justify"><h5>Justify</h5>Phasellus viverra tortor sapien, vel lobortis mauris feugiat tempor. Morbi nec augue sagittis, condimentum risus eu, volutpat nunc.</div>
-                        <div class="col border text-right"><h5>Right</h5>Phasellus viverra tortor sapien, vel lobortis mauris feugiat tempor. Morbi nec augue sagittis, condimentum risus eu, volutpat nunc.</div>
-                    </div>
-                    <div class="row mb-3">
-                        <h4 id="ttva" class="anchor mb-2">Vertical align</h4>
-                        <div class="col border ">Phasellus viverra tortor sapien, vel lobortis mauris feugiat tempor. Morbi nec augue sagittis, condimentum risus eu, volutpat nunc.</div>
-                        <div class="col border align-v-top">
-                            <h5>Top</h5>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                        </div>
-                        <div class="col border align-v-center">
-                            <h5>Center</h5>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                        </div>
-                        <div class="col border align-v-bottom">
-                            <h5>Bottom</h5>
-                            <p>Lorem ipsum dolor sit amet.</p>
-                        </div>
-                    </div>
-                    <div class="row mb-3">
-                        <h4 id="ts" class="mb-2">Tooltips</h4>
-                        <div class="col col-12 col-sm text-center">
-                            <span class="tooltip tooltip-up" aria-label="Suspendisse pulvinar ultricies urna, sit amet volutpat sapien rhoncus quis.">Up</span>
-                        </div>
-                        <div class="col col-12 col-sm text-center">
-                            <span class="tooltip tooltip-up-left tooltip-sm" aria-label="Suspendisse pulvinar ultricies urna, sit amet volutpat sapien rhoncus quis.">Up left</span>
-                        </div>
-                        <div class="col col-12 col-sm text-center">
-                            <span class="tooltip tooltip-up-right tooltip-md" aria-label="Suspendisse pulvinar ultricies urna, sit amet volutpat sapien rhoncus quis.">Up right</span>
-                        </div>
-                        <div class="col col-12 col-sm text-center">
-                            <span class="tooltip tooltip-right tooltip-lg" aria-label="Suspendisse pulvinar ultricies urna, sit amet volutpat sapien rhoncus quis.">Right</span>
-                        </div>
-                        <div class="col col-12 col-sm text-center">
-                            <span class="tooltip tooltip-down tooltip-xl" aria-label="Suspendisse pulvinar ultricies urna, sit amet volutpat sapien rhoncus quis.">Down</span>
-                        </div>
-                        <div class="col col-12 col-sm text-center">
-                            <span class="tooltip tooltip-down-left tooltip-fit" aria-label="Suspendisse pulvinar ultricies urna, sit amet volutpat sapien rhoncus quis.">Down left</span>
-                        </div>
-                        <div class="col col-12 col-sm text-center">
-                            <span class="tooltip tooltip-down-right" aria-label="Suspendisse pulvinar ultricies urna, sit amet volutpat sapien rhoncus quis.">Down right</span>
-                        </div>
-                        <div class="col col-12 col-sm text-center">
-                            <span class="tooltip tooltip-left" aria-label="Suspendisse pulvinar ultricies urna, sit amet volutpat sapien rhoncus quis.">Left</span>
-                        </div>
-                    </div>
+                </div>
 
-                    <h2 id="g" class="mb-2">Grid</h2>
-                    <h3 id="gas" class="mb-2">Auto size columns</h3>
-                    <div class="row mb-1">
-                        <div class="col border text-center">
-                            <p class="p-0 m-0">col</p>
-                        </div>
-                    </div>
-                    <div class="row mb-1">
-                        <div class="col border text-center">
-                            <p class="p-0 m-0">col</p>
-                        </div>
-                        <div class="col border text-center">
-                            <p class="p-0 m-0">col</p>
-                        </div>
-                    </div>
-                    <div class="row mb-1">
-                        <div class="col border text-center">
-                            <p class="p-0 m-0">col</p>
-                        </div>
-                        <div class="col border text-center">
-                            <p class="p-0 m-0">col</p>
-                        </div>
-                        <div class="col border text-center">
-                            <p class="p-0 m-0">col</p>
-                        </div>
-                    </div>
-                    <div class="row mb-1">
-                        <div class="col border text-center">
-                            <p class="p-0 m-0">col</p>
-                        </div>
-                        <div class="col border text-center">
-                            <p class="p-0 m-0">col</p>
-                        </div>
-                        <div class="col border text-center">
-                            <p class="p-0 m-0">col</p>
-                        </div>
-                        <div class="col border text-center">
-                            <p class="p-0 m-0">col</p>
-                        </div>
-                    </div>
-                    <div class="row mb-1">
-                        <div class="col border text-center">
-                            <p class="p-0 m-0">col</p>
-                        </div>
-                        <div class="col border text-center">
-                            <p class="p-0 m-0">col</p>
-                        </div>
-                        <div class="col border text-center">
-                            <p class="p-0 m-0">col</p>
-                        </div>
-                        <div class="col border text-center">
-                            <p class="p-0 m-0">col</p>
-                        </div>
-                        <div class="col border text-center">
-                            <p class="p-0 m-0">col</p>
-                        </div>
-                    </div>
-                    <div class="row mb-1">
-                        <div class="col border text-center">
-                            <p class="p-0 m-0">col</p>
-                        </div>
-                        <div class="col border text-center">
-                            <p class="p-0 m-0">col</p>
-                        </div>
-                        <div class="col border text-center">
-                            <p class="p-0 m-0">col</p>
-                        </div>
-                        <div class="col border text-center">
-                            <p class="p-0 m-0">col</p>
-                        </div>
-                        <div class="col border text-center">
-                            <p class="p-0 m-0">col</p>
-                        </div>
-                        <div class="col border text-center">
-                            <p class="p-0 m-0">col</p>
-                        </div>
-                    </div>
-                    <div class="row mb-1">
-                        <div class="col border text-center">
-                            <p class="p-0 m-0">col</p>
-                        </div>
-                        <div class="col border text-center">
-                            <p class="p-0 m-0">col</p>
-                        </div>
-                        <div class="col border text-center">
-                            <p class="p-0 m-0">col</p>
-                        </div>
-                        <div class="col border text-center">
-                            <p class="p-0 m-0">col</p>
-                        </div>
-                        <div class="col border text-center">
-                            <p class="p-0 m-0">col</p>
-                        </div>
-                        <div class="col border text-center">
-                            <p class="p-0 m-0">col</p>
-                        </div>
-                        <div class="col border text-center">
-                            <p class="p-0 m-0">col</p>
-                        </div>
-                        <div class="col border text-center">
-                            <p class="p-0 m-0">col</p>
-                        </div>
-                        <div class="col border text-center">
-                            <p class="p-0 m-0">col</p>
-                        </div>
-                        <div class="col border text-center">
-                            <p class="p-0 m-0">col</p>
-                        </div>
-                        <div class="col border text-center">
-                            <p class="p-0 m-0">col</p>
-                        </div>
-                        <div class="col border text-center">
-                            <p class="p-0 m-0">col</p>
-                        </div>
-                    </div>
-
-                    <h3 id="gf" class="mt-2 mb-2">Fixed width column</h3>
-                    <div class="row mb-1">
-                        <div class="col col-12 border text-center">
-                            <p class="p-0 m-0">12 col</p>
-                        </div>
-                    </div>
-                    <div class="row mb-1">
-                        <div class="col border text-center">
-                            <p class="p-0 m-0">col</p>
-                        </div>
-                        <div class="col col-11 border text-center">
-                            <p class="p-0 m-0">11 col</p>
-                        </div>
-                    </div>
-                    <div class="row mb-1">
-                        <div class="col border text-center">
-                            <p class="p-0 m-0">col</p>
-                        </div>
-                        <div class="col col-10 border text-center">
-                            <p class="p-0 m-0">10 col</p>
-                        </div>
-                    </div>
-                    <div class="row mb-1">
-                        <div class="col border text-center">
-                            <p class="p-0 m-0">col</p>
-                        </div>
-                        <div class="col col-9 border text-center">
-                            <p class="p-0 m-0">9 col</p>
-                        </div>
-                    </div>
-                    <div class="row mb-1">
-                        <div class="col border text-center">
-                            <p class="p-0 m-0">col</p>
-                        </div>
-                        <div class="col col-8 border text-center">
-                            <p class="p-0 m-0">8 col</p>
-                        </div>
-                    </div>
-                    <div class="row mb-1">
-                        <div class="col border text-center">
-                            <p class="p-0 m-0">col</p>
-                        </div>
-                        <div class="col col-7 border text-center">
-                            <p class="p-0 m-0">7 col</p>
-                        </div>
-                    </div>
-                    <div class="row mb-1">
-                        <div class="col border text-center">
-                            <p class="p-0 m-0">col</p>
-                        </div>
-                        <div class="col col-6 border text-center">
-                            <p class="p-0 m-0">6 col</p>
-                        </div>
-                    </div>
-                    <div class="row mb-1">
-                        <div class="col border text-center">
-                            <p class="p-0 m-0">col</p>
-                        </div>
-                        <div class="col col-5 border text-center">
-                            <p class="p-0 m-0">5 col</p>
-                        </div>
-                    </div>
-                    <div class="row mb-1">
-                        <div class="col border text-center">
-                            <p class="p-0 m-0">col</p>
-                        </div>
-                        <div class="col col-4 border text-center">
-                            <p class="p-0 m-0">4 col</p>
-                        </div>
-                    </div>
-                    <div class="row mb-1">
-                        <div class="col border text-center">
-                            <p class="p-0 m-0">col</p>
-                        </div>
-                        <div class="col col-3 border text-center">
-                            <p class="p-0 m-0">3 col</p>
-                        </div>
-                    </div>
-                    <div class="row mb-1">
-                        <div class="col border text-center">
-                            <p class="p-0 m-0">col</p>
-                        </div>
-                        <div class="col col-2 border text-center">
-                            <p class="p-0 m-0">2 col</p>
-                        </div>
-                    </div>
-                    <div class="row mb-1">
-                        <div class="col border text-center">
-                            <p class="p-0 m-0">col</p>
-                        </div>
-                        <div class="col col-1 border text-center">
-                            <p class="p-0 m-0">1 col</p>
-                        </div>
-                    </div>
-                    <div class="row mb-1">
-                        <div class="col border text-center">
-                            <p class="p-0 m-0">col</p>
-                        </div>
-                        <div class="col col-5 border text-center">
-                            <p class="p-0 m-0">5 col</p>
-                        </div>
-                        <div class="col border text-center">
-                            <p class="p-0 m-0">col</p>
-                        </div>
-                    </div>
-
-                    <h3 id="gsb" class="mt-2 mb-2">Spaces between columns</h3>
-                    <div class="row mb-1">
-                        <div class="col col-3 border text-center">
-                            <p class="p-0 m-0">3 col</p>
-                        </div>
-                        <div class="col col-3 border text-center">
-                            <p class="p-0 m-0">No space defined</p>
-                        </div>
-                        <div class="col col-3 border text-center">
-                            <p class="p-0 m-0">3 col</p>
-                        </div>
-                    </div>
-                    <div class="row space-around mb-1">
-                        <div class="col col-3 border text-center">
-                            <p class="p-0 m-0">3 col</p>
-                        </div>
-                        <div class="col col-3 border text-center">
-                            <p class="p-0 m-0">Space around</p>
-                        </div>
-                        <div class="col col-3 border text-center">
-                            <p class="p-0 m-0">3 col</p>
-                        </div>
-                    </div>
-                    <div class="row space-between mb-1">
-                        <div class="col col-3 border text-center">
-                            <p class="p-0 m-0">3 col</p>
-                        </div>
-                        <div class="col col-3 border text-center">
-                            <p class="p-0 m-0">Space between</p>
-                        </div>
-                        <div class="col col-3 border text-center">
-                            <p class="p-0 m-0">3 col</p>
-                        </div>
-                    </div>
-                    <div class="row space-evenly mb-1">
-                        <div class="col col-3 border text-center">
-                            <p class="p-0 m-0">3 col</p>
-                        </div>
-                        <div class="col col-3 border text-center">
-                            <p class="p-0 m-0">Space evenly</p>
-                        </div>
-                        <div class="col col-3 border text-center">
-                            <p class="p-0 m-0">3 col</p>
-                        </div>
-                    </div>
-
-                    <h3 id="go" class="mt-2 mb-2">Offset</h3>
-                    <div class="row mb-3">
-                        <div class="col col-6 offset-3 offset-lg-3 offset-sm-1 border text-center shadow">Offset 3</div>
-                    </div>
-                    <div class="row mb-3">
-                        <div class="col col-3 offset-lg-8 offset-sm-4 border text-center shadow">Offset 8</div>
-                    </div>
-
-                    <h3 id="gc" class="mt-2 mb-2">Center</h3>
-                    <div class="row flex-center mb-3">
-                        <div class="col col-5 border text-center shadow">Center</div>
-                    </div>
-
-                    <h3 id="gr" class="mt-2 mb-2">Right</h3>
-                    <div class="row flex-end mb-3">
-                        <div class="col col-2 border text-center shadow">1. col</div>
-                        <div class="col col-2 border text-center shadow">2. col</div>
-                    </div>
-
-                    <h3 id="grw" class="mt-2 mb-2">Row with two breaks</h3>
-                    <div class="row mb-3">
-                        <div class="col border text-center">col</div>
-                        <div class="col border text-center">col</div>
-                        <div class="w-100"></div>
-                        <div class="col border text-center">col</div>
-                        <div class="col border text-center">col</div>
-                        <div class="col border text-center">col</div>
-                        <div class="w-100"></div>
-                        <div class="col border text-center">col</div>
-                        <div class="col border text-center">col</div>
-                    </div>
-
-                    <h3 id="gb" class="mt-2 mb-2">Breakpoints</h3>
-                    <h4 class="mb-1 d-none d-xs-block">XS breakpoint</h4>
-                    <h4 class="mb-1 d-none d-sm-block">SM breakpoint</h4>
-                    <h4 class="mb-1 d-none d-md-block">MD breakpoint</h4>
-                    <h4 class="mb-1 d-none d-lg-block">LG breakpoint</h4>
-                    <h4 class="mb-1 d-none d-xl-block">XL breakpoint</h4>
-                    <div class="row mb-3">
-                        <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 border">col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2</div>
-                        <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 border">col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2</div>
-                        <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 border">col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2</div>
-                        <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2 border">col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2</div>
-                        <div class="col col-12 col-sm-6 col-md-4 col-lg-6 col-xl-2 border">col-12 col-sm-6 col-md-4 col-lg-6 col-xl-2</div>
-                        <div class="col col-12 col-sm-6 col-md-4 col-lg-6 col-xl-2 border">col-12 col-sm-6 col-md-4 col-lg-6 col-xl-2</div>
-                    </div>
-                    <div class="row mb-3">
-                        <div class="col col-12 col-sm-6 border">col-12 col-sm-6</div>
-                        <div class="col col-12 col-sm-6 border">col-12 col-sm-6</div>
-                    </div>
-                    <div class="row mb-3">
-                        <div class="col col-6 col-md-4 border">col-6 col-md-4</div>
-                        <div class="col col-6 col-md-4 border">col-6 col-md-4</div>
-                        <div class="col col-12 col-md-4 border">col-12 col-md-4</div>
-                    </div>
-
-                    <h3 id="gbo" class="mt-2 mb-2">Border</h3>
-                    <div class="row mb-3">
-                        <div class="col">
-                            <p class="border text-center">border</p>
-                        </div>
-                        <div class="col">
-                            <p class="border-top text-center">border top</p>
-                        </div>
-                        <div class="col">
-                            <p class="border-right text-center">border right</p>
-                        </div>
-                        <div class="col">
-                            <p class="border-bottom text-center">border bottom</p>
-                        </div>
-                        <div class="col">
-                            <p class="border-left text-center">border left</p>
-                        </div>
-                    </div>
-
-                    <h3 id="gw" class="mt-2 mb-2">Width</h3>
-                    <div class="row mb-3">
-                        <div class="col">
-                            <p class="w-10 border">10%</p>
-                        </div>
-                    </div>
-                    <div class="row mb-3">
-                        <div class="col">
-                            <p class="w-33 border">33%</p>
-                        </div>
-                    </div>
-                    <div class="row mb-3">
-                        <div class="col">
-                            <p class="w-75 border">75%</p>
-                        </div>
-                    </div>
-                    <div class="row mb-3">
-                        <div class="col">
-                            <p class="w-100 border">100%</p>
-                        </div>
-                    </div>
-
-                    <h2 id="b" class="mb-2">Buttons</h2>
-                    <div class="row mb-1">
-                        <div class="col col-12 col-sm text-center p-1">
-                            <button>Button</button>
-                        </div>
-                        <div class="col col-12 col-sm text-center p-1">
-                            <button class="rounded">Rounded</button>
-                        </div>
-                        <div class="col col-12 col-sm text-center p-1">
-                            <button class="natural">Natural</button>
-                        </div>
-                        <div class="col col-12 col-sm text-center p-1">
-                            <a href="#" class="button">Anchor</a>
-                        </div>
-                        <div class="col col-12 col-sm text-center p-1">
-                            <button class="disabled">Disabled</button>
-                        </div>
-                    </div>
-                    <div class="row mb-1">
-                        <div class="col col-12 col-sm text-center p-1">
-                            <button class="ghost">Ghost</button>
-                        </div>
-                        <div class="col col-12 col-sm text-center p-1">
-                            <button class="ghost rounded">Rounded</button>
-                        </div>
-                        <div class="col col-12 col-sm text-center p-1">
-                            <button class="ghost natural">Natural</button>
-                        </div>
-                        <div class="col col-12 col-sm text-center p-1">
-                            <a href="#" class="button ghost">Anchor</a>
-                        </div>
-                        <div class="col col-12 col-sm text-center p-1">
-                            <button class="ghost disabled">Disabled</button>
-                        </div>
-                    </div>
-                    <div class="row mb-1">
-                        <div class="col col-12 col-sm text-center p-1">
-                            <button class="link">Link</button>
-                        </div>
-                        <div class="col col-12 col-sm text-center p-1">
-                            <button class="link rounded">Rounded</button>
-                        </div>
-                        <div class="col col-12 col-sm text-center p-1">
-                            <button class="link natural">Natural</button>
-                        </div>
-                        <div class="col col-12 col-sm text-center p-1">
-                            <a href="#" class="button link">Anchor</a>
-                        </div>
-                        <div class="col col-12 col-sm text-center p-1">
-                            <button class="link disabled">Disabled</button>
-                        </div>
-                    </div>
-                    <h3 id="bl" class="mt-2 mb-2">Large</h3>
-                    <div class="row mb-1">
-                        <div class="col col-12 col-sm-3 text-center p-1">
-                            <button class="large">Button</button>
-                        </div>
-                        <div class="col col-12 col-sm-3 text-center p-1">
-                            <button class="large ghost">Ghost</button>
-                        </div>
-                        <div class="col col-12 col-sm-3 text-center p-1">
-                            <button class="large link">Link</button>
-                        </div>
-                        <div class="col col-12 col-sm-3 text-center p-1">
-                            <a href="#" class="button large">Anchor</a>
-                        </div>
-                    </div>
-                    <h3 id="bb" class="mt-2 mb-2">Basic</h3>
-                    <div class="row mb-1">
-                        <div class="col col-6 col-sm-3 text-center p-1">
-                            <button>Button</button>
-                        </div>
-                        <div class="col col-6 col-sm-3 text-center p-1">
-                            <button class="ghost">Ghost</button>
-                        </div>
-                        <div class="col col-6 col-sm-3 text-center p-1">
-                            <button class="link">Link</button>
-                        </div>
-                        <div class="col col-6 col-sm-3 text-center p-1">
-                            <a href="#" class="button">Anchor</a>
-                        </div>
-                    </div>
-                    <h3 id="bs" class="mt-2 mb-2">Small</h3>
-                    <div class="row mb-1">
-                        <div class="col col-6 col-sm-3 text-center p-1">
-                            <button class="small">Button</button>
-                        </div>
-                        <div class="col col-6 col-sm-3 text-center p-1">
-                            <button class="small ghost">Ghost</button>
-                        </div>
-                        <div class="col col-6 col-sm-3 text-center p-1">
-                            <button class="small link">Link</button>
-                        </div>
-                        <div class="col col-6 col-sm-3 text-center p-1">
-                            <a href="#" class="button small">Anchor</a>
-                        </div>
-                    </div>
-
-                    <h3 id="l" class="mb-2">List</h3>
-                    <div class="row mb-3">
-                        <div class="col p-2">
-                            <h4 class="mb-1">Unordered list</h4>
-                            <ul class="mb-2">
-                                <li>Default</li>
-                                <li>Two</li>
-                                <li>Three</li>
-                                <li>Four</li>
-                            </ul>
-                            <ul class="list-circle mb-2">
-                                <li>Circle</li>
-                                <li>Two</li>
-                                <li>Three</li>
-                                <li>Four</li>
-                            </ul>
-                            <ul class="list-square mb-2">
-                                <li>Square</li>
-                                <li>Two</li>
-                                <li>Three</li>
-                                <li>Four</li>
-                            </ul>
-                            <ul class="list-bullet mb-2">
-                                <li>Bullet</li>
-                                <li>Two</li>
-                                <li>Three</li>
-                                <li>Four</li>
-                            </ul>
-                            <ul class="list-dash mb-2">
-                                <li>Dash</li>
-                                <li>Two</li>
-                                <li>Three</li>
-                                <li>Four</li>
-                            </ul>
-                            <ul>
-                                <li>Nested</li>
-                                <li>Two</li>
-                                <li>Three
-                                    <ul>
-                                        <li>Second level</li>
-                                        <li>Two</li>
-                                        <li>Three
-                                            <ul>
-                                                <li>Third level</li>
-                                                <li>Two</li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col p-2">
-                            <h4 class="mb-1">Ordered list</h4>
-                            <ol class="mb-2">
-                                <li>Default</li>
-                                <li>Two</li>
-                                <li>Three</li>
-                                <li>Four</li>
-                            </ol>
-                            <ol class="list-lower-greek mb-2">
-                                <li>Lower greek</li>
-                                <li>Two</li>
-                                <li>Three</li>
-                            </ol>
-                            <ol class="list-lower-latin mb-2">
-                                <li>Lower latin</li>
-                                <li>Two</li>
-                                <li>Three</li>
-                            </ol>
-                            <ol class="list-lower-roman mb-2">
-                                <li>Lower roman</li>
-                                <li>Two</li>
-                                <li>Three</li>
-                            </ol>
-                            <ol class="list-upper-alpha mb-2">
-                                <li>Upper alpha</li>
-                                <li>Two</li>
-                                <li>Three</li>
-                            </ol>
-                            <ol class="list-upper-latin mb-2">
-                                <li>Upper latin</li>
-                                <li>Two</li>
-                                <li>Three</li>
-                            </ol>
-                            <ol class="list-upper-roman mb-2">
-                                <li>Upper roman</li>
-                                <li>Two</li>
-                                <li>Three</li>
-                            </ol>
-                            <ol>
-                                <li>Nested</li>
-                                <li>Two</li>
-                                <li>Three
-                                    <ol>
-                                        <li>One</li>
-                                        <li>Two</li>
-                                        <li>Three
-                                            <ol>
-                                                <li>One</li>
-                                                <li>Two</li>
-                                            </ol>
-                                        </li>
-                                    </ol>
-                                </li>
-                            </ol>
-                        </div>
-                    </div>
-
-                    <h2 id="f" class="mb-2">Forms</h2>
-                    <div class="row mb-1">
-                        <div class="col col-12 col-sm p-1">
-                            <form id="fc" class="form rounded natural">
-                                <fieldset>
-                                    <legend class="edged">Clasic form</legend>
-                                    <div class="row">
-                                        <div class="form-group col col-12 col-sm-6">
-                                            <label for="inputColor">Color</label>
-                                            <input type="color" id="inputColor" />
-                                            <small class="form-text">Quisque luctus sit amet massa eget faucibus. Curabitur feugiat ornare sapien, eu pretium tortor gravida non.</small>
-                                        </div>
-                                        <div class="form-group col col-12 col-sm-6">
-                                            <label for="inputDate">Date</label>
-                                            <input type="date" id="inputDate" />
-                                        </div>
-                                        <div class="form-group col col-12 col-sm-6">
-                                            <label for="inputDatetime">Datetime</label>
-                                            <input type="datetime-local" id="inputDatetime" />
-                                        </div>
-                                        <div class="form-group col col-12 col-sm-6">
-                                            <label for="inputEmail">Email</label>
-                                            <input type="email" id="inputEmail" />
-                                        </div>
-                                        <div class="form-group col col-12 col-sm-6">
-                                            <label for="inputFile">File</label>
-                                            <input type="file" id="inputFile" />
-                                        </div>
-                                        <div class="form-group radiocheck col col-12 col-sm-6">
-                                            <label for="inputCheckbox">Checkbox</label>
-                                            <input type="checkbox" id="inputCheckbox" />
-                                        </div>
-                                        <div class="form-group col col-12 col-sm-6">
-                                            <label for="inputMonth">Month</label>
-                                            <input type="month" id="inputMonth" />
-                                        </div>
-                                        <div class="form-group col col-12 col-sm-6">
-                                            <label for="inputNumber">Number</label>
-                                            <input type="number" id="inputNumber" />
-                                        </div>
-                                        <div class="form-group col col-12 col-sm-6">
-                                            <label for="inputPassword">Password</label>
-                                            <input type="password" id="inputPassword" />
-                                        </div>
-                                        <div class="form-group radiocheck col col-12 col-sm-6">
-                                            <label for="inputRadio">Radio</label>
-                                            <input type="radio" id="inputRadio" />
-                                        </div>
-                                        <div class="form-group col col-12 col-sm-6">
-                                            <label for="inputRange">Range</label>
-                                            <input type="range" id="inputRange" />
-                                        </div>
-                                        <div class="form-group col col-12 col-sm-6">
-                                            <label for="inputSearch">Search</label>
-                                            <input type="search" id="inputSearch" />
-                                        </div>
-                                        <div class="form-group col col-12 col-sm-6">
-                                            <label for="inputSelect">Select</label>
-                                            <select id="inputSelect">
-                                                <option value="1">First</option>
-                                                <option value="2">Second</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-group col col-12 col-sm-6">
-                                            <label for="inputTel">Tel</label>
-                                            <input type="tel" id="inputTel" />
-                                        </div>
-                                        <div class="form-group col col-12 col-sm-6">
-                                            <label for="inputText">Text</label>
-                                            <input type="text" id="inputText" />
-                                        </div>
-                                        <div class="form-group col col-12 col-sm-6">
-                                            <label for="inputTime">Time</label>
-                                            <input type="time" id="inputTime" />
-                                        </div>
-                                        <div class="form-group col col-12 col-sm-6">
-                                            <label for="inputUrl">Url</label>
-                                            <input type="url" id="inputUrl" />
-                                        </div>
-                                        <div class="form-group col col-12 col-sm-6">
-                                            <label for="inputWeek">Week</label>
-                                            <input type="week" id="inputWeek" />
-                                        </div>
-                                        <div class="form-group col col-12 col-sm-6">
-                                            <label for="inputTextarea">Textarea</label>
-                                            <textarea rows="3" id="inputTextarea"></textarea>
-                                        </div>
+                <h2 id="f" class="mb-2">Forms</h2>
+                <div class="row mb-1">
+                    <div class="col col-12 col-sm p-1">
+                        <form id="fc" class="form rounded natural">
+                            <fieldset>
+                                <legend class="edged">Clasic form</legend>
+                                <div class="row">
+                                    <div class="form-group col col-12 col-sm-6">
+                                        <label for="inputColor">Color</label>
+                                        <input type="color" id="inputColor" />
+                                        <small class="form-text">Quisque luctus sit amet massa eget faucibus. Curabitur
+                                            feugiat ornare sapien, eu pretium tortor gravida non.</small>
                                     </div>
-                                </fieldset>
-                            </form>
-                            <form id="fi" class="form inline link">
-                                <fieldset>
-                                    <legend>Inline form</legend>
-                                    <div class="row">
-                                        <div class="form-group col col-12 col-sm-6">
-                                            <label for="inputInlineColor">Color</label>
-                                            <input type="color" id="inputInlineColor" />
-                                        </div>
-                                        <div class="form-group col col-12 col-sm-6">
-                                            <label for="inputInlineDate">Date</label>
-                                            <input type="date" id="inputInlineDate" />
-                                        </div>
-                                        <div class="form-group col col-12 col-sm-6">
-                                            <label for="inputInlineDatetime">Datetime</label>
-                                            <input type="datetime-local" id="inputInlineDatetime" />
-                                        </div>
-                                        <div class="form-group col col-12 col-sm-6">
-                                            <label for="inputInlineEmail">Email</label>
-                                            <input type="email" id="inputInlineEmail" />
-                                        </div>
-                                        <div class="form-group col col-12 col-sm-6">
-                                            <label for="inputInlineFile">File</label>
-                                            <input type="file" id="inputInlineFile" />
-                                        </div>
-                                        <div class="form-group radiocheck col col-12 col-sm-6">
-                                            <label for="inputInlineCheckbox">Checkbox</label>
-                                            <input type="checkbox" id="inputInlineCheckbox" />
-                                        </div>
-                                        <div class="form-group col col-12 col-sm-6">
-                                            <label for="inputInlineMonth">Month</label>
-                                            <input type="month" id="inputInlineMonth" />
-                                        </div>
-                                        <div class="form-group col col-12 col-sm-6">
-                                            <label for="inputInlineNumber">Number</label>
-                                            <input type="number" id="inputInlineNumber" />
-                                        </div>
-                                        <div class="form-group col col-12 col-sm-6">
-                                            <label for="inputInlinePassword">Password</label>
-                                            <input type="password" id="inputInlinePassword" />
-                                        </div>
-                                        <div class="form-group radiocheck col col-12 col-sm-6">
-                                            <label for="inputInlineRadio">Radio</label>
-                                            <input type="radio" id="inputInlineRadio" />
-                                        </div>
-                                        <div class="form-group col col-12 col-sm-6">
-                                            <label for="inputInlineRange">Range</label>
-                                            <input type="range" id="inputInlineRange" />
-                                        </div>
-                                        <div class="form-group col col-12 col-sm-6">
-                                            <label for="inputInlineSearch">Search</label>
-                                            <input type="search" id="inputInlineSearch" />
-                                        </div>
-                                        <div class="form-group col col-12 col-sm-6">
-                                            <label for="inputInlineSelect">Select</label>
-                                            <select id="inputInlineSelect">
-                                                <option value="1">First</option>
-                                                <option value="2">Second</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-group col col-12 col-sm-6">
-                                            <label for="inputInlineTel">Tel</label>
-                                            <input type="tel" id="inputInlineTel" />
-                                        </div>
-                                        <div class="form-group col col-12 col-sm-6">
-                                            <label for="inputInlineText">Text</label>
-                                            <input type="text" id="inputInlineText" />
-                                        </div>
-                                        <div class="form-group col col-12 col-sm-6">
-                                            <label for="inputInlineTime">Time</label>
-                                            <input type="time" id="inputInlineTime" />
-                                        </div>
-                                        <div class="form-group col col-12 col-sm-6">
-                                            <label for="inputInlineUrl">Url</label>
-                                            <input type="url" id="inputInlineUrl" />
-                                        </div>
-                                        <div class="form-group col col-12 col-sm-6">
-                                            <label for="inputInlineWeek">Week</label>
-                                            <input type="week" id="inputInlineWeek" />
-                                        </div>
-                                        <div class="form-group col col-12 col-sm-6">
-                                            <label for="inputTextarea">Textarea</label>
-                                            <textarea rows="3" id="inputTextarea"></textarea>
-                                        </div>
+                                    <div class="form-group col col-12 col-sm-6">
+                                        <label for="inputDate">Date</label>
+                                        <input type="date" id="inputDate" />
                                     </div>
-                                </fieldset>
-                            </form>
-                            <form id="ff" class="form form-floating rounded natural">
-                                <fieldset>
-                                    <legend class="edged">Floating form</legend>
-                                    <div class="row">
-                                        <div class="form-group col col-12 col-sm-6">
-                                            <label for="inputColor">Color</label>
-                                            <input type="color" id="inputColor" />
-                                            <small class="form-text">Quisque luctus sit amet massa eget faucibus. Curabitur feugiat ornare sapien, eu pretium tortor gravida non.</small>
-                                        </div>
-                                        <div class="form-group col col-12 col-sm-6">
-                                            <label for="inputDate">Date</label>
-                                            <input type="date" id="inputDate" />
-                                        </div>
-                                        <div class="form-group col col-12 col-sm-6">
-                                            <label for="inputDatetime">Datetime</label>
-                                            <input type="datetime-local" id="inputDatetime" />
-                                        </div>
-                                        <div class="form-group col col-12 col-sm-6">
-                                            <input type="email" id="inputEmail" placeholder=" " />
-                                            <label for="inputEmail">Email</label>
-                                        </div>
-                                        <div class="form-group col col-12 col-sm-6">
-                                            <label for="inputFile">File</label>
-                                            <input type="file" id="inputFile" />
-                                        </div>
-                                        <div class="form-group radiocheck col col-12 col-sm-6">
-                                            <label for="inputCheckbox">Checkbox</label>
-                                            <input type="checkbox" id="inputCheckbox" />
-                                        </div>
-                                        <div class="form-group col col-12 col-sm-6">
-                                            <label for="inputMonth">Month</label>
-                                            <input type="month" id="inputMonth" />
-                                        </div>
-                                        <div class="form-group col col-12 col-sm-6">
-                                            <label for="inputNumber">Number</label>
-                                            <input type="number" id="inputNumber" />
-                                        </div>
-                                        <div class="form-group col col-12 col-sm-6">
-                                            <label for="inputPassword">Password</label>
-                                            <input type="password" id="inputPassword" />
-                                        </div>
-                                        <div class="form-group radiocheck col col-12 col-sm-6">
-                                            <label for="inputRadio">Radio</label>
-                                            <input type="radio" id="inputRadio" />
-                                        </div>
-                                        <div class="form-group col col-12 col-sm-6">
-                                            <label for="inputRange">Range</label>
-                                            <input type="range" id="inputRange" />
-                                        </div>
-                                        <div class="form-group col col-12 col-sm-6">
-                                            <label for="inputSearch">Search</label>
-                                            <input type="search" id="inputSearch" />
-                                        </div>
-                                        <div class="form-group col col-12 col-sm-6">
-                                            <label for="inputSelect">Select</label>
-                                            <select id="inputSelect">
-                                                <option value="1">First</option>
-                                                <option value="2">Second</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-group col col-12 col-sm-6">
-                                            <label for="inputTel">Tel</label>
-                                            <input type="tel" id="inputTel" />
-                                        </div>
-                                        <div class="form-group col col-12 col-sm-6">
-                                            <label for="inputText">Text</label>
-                                            <input type="text" id="inputText" />
-                                        </div>
-                                        <div class="form-group col col-12 col-sm-6">
-                                            <label for="inputTime">Time</label>
-                                            <input type="time" id="inputTime" />
-                                        </div>
-                                        <div class="form-group col col-12 col-sm-6">
-                                            <label for="inputUrl">Url</label>
-                                            <input type="url" id="inputUrl" />
-                                        </div>
-                                        <div class="form-group col col-12 col-sm-6">
-                                            <label for="inputWeek">Week</label>
-                                            <input type="week" id="inputWeek" />
-                                        </div>
-                                        <div class="form-group col col-12 col-sm-6">
-                                            <label for="inputTextarea">Textarea</label>
-                                            <textarea rows="3" id="inputTextarea"></textarea>
-                                        </div>
+                                    <div class="form-group col col-12 col-sm-6">
+                                        <label for="inputDatetime">Datetime</label>
+                                        <input type="datetime-local" id="inputDatetime" />
                                     </div>
-                                </fieldset>
-                            </form>
-                        </div>
+                                    <div class="form-group col col-12 col-sm-6">
+                                        <label for="inputEmail">Email</label>
+                                        <input type="email" id="inputEmail" />
+                                    </div>
+                                    <div class="form-group col col-12 col-sm-6">
+                                        <label for="inputFile">File</label>
+                                        <input type="file" id="inputFile" />
+                                    </div>
+                                    <div class="form-group radiocheck col col-12 col-sm-6">
+                                        <label for="inputCheckbox">Checkbox</label>
+                                        <input type="checkbox" id="inputCheckbox" />
+                                    </div>
+                                    <div class="form-group col col-12 col-sm-6">
+                                        <label for="inputMonth">Month</label>
+                                        <input type="month" id="inputMonth" />
+                                    </div>
+                                    <div class="form-group col col-12 col-sm-6">
+                                        <label for="inputNumber">Number</label>
+                                        <input type="number" id="inputNumber" />
+                                    </div>
+                                    <div class="form-group col col-12 col-sm-6">
+                                        <label for="inputPassword">Password</label>
+                                        <input type="password" id="inputPassword" />
+                                    </div>
+                                    <div class="form-group radiocheck col col-12 col-sm-6">
+                                        <label for="inputRadio">Radio</label>
+                                        <input type="radio" id="inputRadio" />
+                                    </div>
+                                    <div class="form-group col col-12 col-sm-6">
+                                        <label for="inputRange">Range</label>
+                                        <input type="range" id="inputRange" />
+                                    </div>
+                                    <div class="form-group col col-12 col-sm-6">
+                                        <label for="inputSearch">Search</label>
+                                        <input type="search" id="inputSearch" />
+                                    </div>
+                                    <div class="form-group col col-12 col-sm-6">
+                                        <label for="inputSelect">Select</label>
+                                        <select id="inputSelect">
+                                            <option value="1">First</option>
+                                            <option value="2">Second</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col col-12 col-sm-6">
+                                        <label for="inputTel">Tel</label>
+                                        <input type="tel" id="inputTel" />
+                                    </div>
+                                    <div class="form-group col col-12 col-sm-6">
+                                        <label for="inputText">Text</label>
+                                        <input type="text" id="inputText" />
+                                    </div>
+                                    <div class="form-group col col-12 col-sm-6">
+                                        <label for="inputTime">Time</label>
+                                        <input type="time" id="inputTime" />
+                                    </div>
+                                    <div class="form-group col col-12 col-sm-6">
+                                        <label for="inputUrl">Url</label>
+                                        <input type="url" id="inputUrl" />
+                                    </div>
+                                    <div class="form-group col col-12 col-sm-6">
+                                        <label for="inputWeek">Week</label>
+                                        <input type="week" id="inputWeek" />
+                                    </div>
+                                    <div class="form-group col col-12 col-sm-6">
+                                        <label for="inputTextarea">Textarea</label>
+                                        <textarea rows="3" id="inputTextarea"></textarea>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                        <form id="fi" class="form inline link">
+                            <fieldset>
+                                <legend>Inline form</legend>
+                                <div class="row">
+                                    <div class="form-group col col-12 col-sm-6">
+                                        <label for="inputInlineColor">Color</label>
+                                        <input type="color" id="inputInlineColor" />
+                                    </div>
+                                    <div class="form-group col col-12 col-sm-6">
+                                        <label for="inputInlineDate">Date</label>
+                                        <input type="date" id="inputInlineDate" />
+                                    </div>
+                                    <div class="form-group col col-12 col-sm-6">
+                                        <label for="inputInlineDatetime">Datetime</label>
+                                        <input type="datetime-local" id="inputInlineDatetime" />
+                                    </div>
+                                    <div class="form-group col col-12 col-sm-6">
+                                        <label for="inputInlineEmail">Email</label>
+                                        <input type="email" id="inputInlineEmail" />
+                                    </div>
+                                    <div class="form-group col col-12 col-sm-6">
+                                        <label for="inputInlineFile">File</label>
+                                        <input type="file" id="inputInlineFile" />
+                                    </div>
+                                    <div class="form-group radiocheck col col-12 col-sm-6">
+                                        <label for="inputInlineCheckbox">Checkbox</label>
+                                        <input type="checkbox" id="inputInlineCheckbox" />
+                                    </div>
+                                    <div class="form-group col col-12 col-sm-6">
+                                        <label for="inputInlineMonth">Month</label>
+                                        <input type="month" id="inputInlineMonth" />
+                                    </div>
+                                    <div class="form-group col col-12 col-sm-6">
+                                        <label for="inputInlineNumber">Number</label>
+                                        <input type="number" id="inputInlineNumber" />
+                                    </div>
+                                    <div class="form-group col col-12 col-sm-6">
+                                        <label for="inputInlinePassword">Password</label>
+                                        <input type="password" id="inputInlinePassword" />
+                                    </div>
+                                    <div class="form-group radiocheck col col-12 col-sm-6">
+                                        <label for="inputInlineRadio">Radio</label>
+                                        <input type="radio" id="inputInlineRadio" />
+                                    </div>
+                                    <div class="form-group col col-12 col-sm-6">
+                                        <label for="inputInlineRange">Range</label>
+                                        <input type="range" id="inputInlineRange" />
+                                    </div>
+                                    <div class="form-group col col-12 col-sm-6">
+                                        <label for="inputInlineSearch">Search</label>
+                                        <input type="search" id="inputInlineSearch" />
+                                    </div>
+                                    <div class="form-group col col-12 col-sm-6">
+                                        <label for="inputInlineSelect">Select</label>
+                                        <select id="inputInlineSelect">
+                                            <option value="1">First</option>
+                                            <option value="2">Second</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col col-12 col-sm-6">
+                                        <label for="inputInlineTel">Tel</label>
+                                        <input type="tel" id="inputInlineTel" />
+                                    </div>
+                                    <div class="form-group col col-12 col-sm-6">
+                                        <label for="inputInlineText">Text</label>
+                                        <input type="text" id="inputInlineText" />
+                                    </div>
+                                    <div class="form-group col col-12 col-sm-6">
+                                        <label for="inputInlineTime">Time</label>
+                                        <input type="time" id="inputInlineTime" />
+                                    </div>
+                                    <div class="form-group col col-12 col-sm-6">
+                                        <label for="inputInlineUrl">Url</label>
+                                        <input type="url" id="inputInlineUrl" />
+                                    </div>
+                                    <div class="form-group col col-12 col-sm-6">
+                                        <label for="inputInlineWeek">Week</label>
+                                        <input type="week" id="inputInlineWeek" />
+                                    </div>
+                                    <div class="form-group col col-12 col-sm-6">
+                                        <label for="inputTextarea">Textarea</label>
+                                        <textarea rows="3" id="inputTextarea"></textarea>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                        <!--form id="ff" class="form form-floating rounded natural">
+                            <fieldset>
+                                <legend class="edged">Floating form</legend>
+                                <div class="row">
+                                    <div class="form-group col col-12 col-sm-6">
+                                        <label for="inputColor">Color</label>
+                                        <input type="color" id="inputColor" />
+                                        <small class="form-text">Quisque luctus sit amet massa eget faucibus. Curabitur
+                                            feugiat ornare sapien, eu pretium tortor gravida non.</small>
+                                    </div>
+                                    <div class="form-group col col-12 col-sm-6">
+                                        <label for="inputDate">Date</label>
+                                        <input type="date" id="inputDate" />
+                                    </div>
+                                    <div class="form-group col col-12 col-sm-6">
+                                        <label for="inputDatetime">Datetime</label>
+                                        <input type="datetime-local" id="inputDatetime" />
+                                    </div>
+                                    <div class="form-group col col-12 col-sm-6">
+                                        <input type="email" id="inputEmail" placeholder=" " />
+                                        <label for="inputEmail">Email</label>
+                                    </div>
+                                    <div class="form-group col col-12 col-sm-6">
+                                        <label for="inputFile">File</label>
+                                        <input type="file" id="inputFile" />
+                                    </div>
+                                    <div class="form-group radiocheck col col-12 col-sm-6">
+                                        <label for="inputCheckbox">Checkbox</label>
+                                        <input type="checkbox" id="inputCheckbox" />
+                                    </div>
+                                    <div class="form-group col col-12 col-sm-6">
+                                        <label for="inputMonth">Month</label>
+                                        <input type="month" id="inputMonth" />
+                                    </div>
+                                    <div class="form-group col col-12 col-sm-6">
+                                        <label for="inputNumber">Number</label>
+                                        <input type="number" id="inputNumber" />
+                                    </div>
+                                    <div class="form-group col col-12 col-sm-6">
+                                        <label for="inputPassword">Password</label>
+                                        <input type="password" id="inputPassword" />
+                                    </div>
+                                    <div class="form-group radiocheck col col-12 col-sm-6">
+                                        <label for="inputRadio">Radio</label>
+                                        <input type="radio" id="inputRadio" />
+                                    </div>
+                                    <div class="form-group col col-12 col-sm-6">
+                                        <label for="inputRange">Range</label>
+                                        <input type="range" id="inputRange" />
+                                    </div>
+                                    <div class="form-group col col-12 col-sm-6">
+                                        <label for="inputSearch">Search</label>
+                                        <input type="search" id="inputSearch" />
+                                    </div>
+                                    <div class="form-group col col-12 col-sm-6">
+                                        <label for="inputSelect">Select</label>
+                                        <select id="inputSelect">
+                                            <option value="1">First</option>
+                                            <option value="2">Second</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col col-12 col-sm-6">
+                                        <label for="inputTel">Tel</label>
+                                        <input type="tel" id="inputTel" />
+                                    </div>
+                                    <div class="form-group col col-12 col-sm-6">
+                                        <label for="inputText">Text</label>
+                                        <input type="text" id="inputText" />
+                                    </div>
+                                    <div class="form-group col col-12 col-sm-6">
+                                        <label for="inputTime">Time</label>
+                                        <input type="time" id="inputTime" />
+                                    </div>
+                                    <div class="form-group col col-12 col-sm-6">
+                                        <label for="inputUrl">Url</label>
+                                        <input type="url" id="inputUrl" />
+                                    </div>
+                                    <div class="form-group col col-12 col-sm-6">
+                                        <label for="inputWeek">Week</label>
+                                        <input type="week" id="inputWeek" />
+                                    </div>
+                                    <div class="form-group col col-12 col-sm-6">
+                                        <label for="inputTextarea">Textarea</label>
+                                        <textarea rows="3" id="inputTextarea"></textarea>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form-->
                     </div>
+                </div>
 
-                    <h2 id="i" class="mb-2">Images</h2>
-                    <div class="row mb-1">
-                        <h3 id="i169" class="mb-2">16:9</h3>
-                        <div class="col col-12 col-sm-6 col-md-4">
+                <h2 id="i" class="mb-2">Images</h2>
+                <div class="row mb-1">
+                    <h3 id="i169" class="mb-2">16:9</h3>
+                    <div class="col col-12 col-sm-6 col-md-4">
+                        <div class="imgWraper format_16_9">
+                            <img src="images/img_300_300.jpg" />
+                        </div>
+                        <div class="text-center h6">300 x 300</div>
+                    </div>
+                    <div class="col col-12 col-sm-6 col-md-4">
+                        <div class="imgWraper format_16_9">
+                            <img src="images/img_600_400.jpg" />
+                        </div>
+                        <div class="text-center h6">600 x 400</div>
+                    </div>
+                    <div class="col col-12 col-sm-6 col-md-4">
+                        <div class="imgWraper format_16_9">
+                            <img src="images/img_400_600.jpg" />
+                        </div>
+                        <div class="text-center h6">400 x 600</div>
+                    </div>
+                </div>
+                <div class="row mb-1">
+                    <h3 id="i43" class="mb-2">4:3</h3>
+                    <div class="col col-12 col-sm-6 col-md-4">
+                        <div class="imgWraper format_4_3">
+                            <img src="images/img_300_300.jpg" />
+                        </div>
+                        <div class="text-center h6">300 x 300</div>
+                    </div>
+                    <div class="col col-12 col-sm-6 col-md-4">
+                        <div class="imgWraper format_4_3">
+                            <img src="images/img_600_400.jpg" />
+                        </div>
+                        <div class="text-center h6">600 x 400</div>
+                    </div>
+                    <div class="col col-12 col-sm-6 col-md-4">
+                        <div class="imgWraper format_4_3">
+                            <img src="images/img_400_600.jpg" />
+                        </div>
+                        <div class="text-center h6">400 x 600</div>
+                    </div>
+                </div>
+                <div class="row mb-1">
+                    <h3 id="i32" class="mb-2">3:2</h3>
+                    <div class="col col-12 col-sm-6 col-md-4">
+                        <div class="imgWraper format_3_2">
+                            <img src="images/img_300_300.jpg" />
+                        </div>
+                        <div class="text-center h6">300 x 300</div>
+                    </div>
+                    <div class="col col-12 col-sm-6 col-md-4">
+                        <div class="imgWraper format_3_2">
+                            <img src="images/img_600_400.jpg" />
+                        </div>
+                        <div class="text-center h6">600 x 400</div>
+                    </div>
+                    <div class="col col-12 col-sm-6 col-md-4">
+                        <div class="imgWraper format_3_2">
+                            <img src="images/img_400_600.jpg" />
+                        </div>
+                        <div class="text-center h6">400 x 600</div>
+                    </div>
+                </div>
+                <div class="row mb-1">
+                    <h3 id="i31" class="mb-2">3:1</h3>
+                    <div class="col col-12 col-sm-6 col-md-4">
+                        <div class="imgWraper format_3_1">
+                            <img src="images/img_300_300.jpg" />
+                        </div>
+                        <div class="text-center h6">300 x 300</div>
+                    </div>
+                    <div class="col col-12 col-sm-6 col-md-4">
+                        <div class="imgWraper format_3_1">
+                            <img src="images/img_600_400.jpg" />
+                        </div>
+                        <div class="text-center h6">600 x 400</div>
+                    </div>
+                    <div class="col col-12 col-sm-6 col-md-4">
+                        <div class="imgWraper format_3_1">
+                            <img src="images/img_400_600.jpg" />
+                        </div>
+                        <div class="text-center h6">400 x 600</div>
+                    </div>
+                </div>
+                <div class="row mb-1">
+                    <h3 id="i11" class="mb-2">1:1</h3>
+                    <div class="col col-12 col-sm-6 col-md-4">
+                        <div class="imgWraper">
+                            <img src="images/img_300_300.jpg" />
+                        </div>
+                        <div class="text-center h6">300 x 300</div>
+                    </div>
+                    <div class="col col-12 col-sm-6 col-md-4">
+                        <div class="imgWraper">
+                            <img src="images/img_600_400.jpg" />
+                        </div>
+                        <div class="text-center h6">600 x 400</div>
+                    </div>
+                    <div class="col col-12 col-sm-6 col-md-4">
+                        <div class="imgWraper">
+                            <img src="images/img_400_600.jpg" />
+                        </div>
+                        <div class="text-center h6">400 x 600</div>
+                    </div>
+                </div>
+                <h2 id="c" class="anchor mb-2">Card</h2>
+                <div class="row mb-1">
+                    <div class="col col-12 col-sm-6 col-md-4 mb-2">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Simple card</h4>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id tristique ex.
+                                    Vivamus ex justo, fringilla quis tortor eu, lacinia varius lacus. Proin sit amet
+                                    nibh gravida, tristique nisi nec, porttitor quam.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-12 col-sm-6 col-md-4 mb-2">
+                        <div class="card">
+                            <div class="card-header">
+                                Header
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Card with header and button</h5>
+                                <h6 class="card-subtitle">Subtitle</h6>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id tristique ex.
+                                </p>
+                                <a href="#" class="button natural small rounded mx-0 mt-2">Anchor</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-12 col-sm-6 col-md-4 mb-2">
+                        <div class="card rounded">
+                            <div class="card-header">
+                                Header
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Card with header and footer</h5>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id tristique ex.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                Footer
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-12 col-sm-6 col-md-4 mb-2">
+                        <div class="card shadow rounded">
                             <div class="imgWraper format_16_9">
-                                <img src="images/img_300_300.jpg" />
+                                <img src="images/img_600_400.jpg" class="rounded-top" />
                             </div>
-                            <div class="text-center h6">300 x 300</div>
+                            <div class="card-body">
+                                <h5 class="card-title">Card with top image</h5>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id tristique ex.
+                                </p>
+                                <a href="#" class="button natural small rounded mx-0 mt-2">Anchor</a>
+                            </div>
                         </div>
-                        <div class="col col-12 col-sm-6 col-md-4">
+                    </div>
+                    <div class="col col-12 col-sm-6 col-md-4 mb-2">
+                        <div class="card shadow rounded">
+                            <div class="card-body">
+                                <h5 class="card-title">Card with bottom image</h5>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id tristique ex.
+                                </p>
+                                <a href="#" class="button natural small rounded mx-0 mt-2">Anchor</a>
+                            </div>
                             <div class="imgWraper format_16_9">
-                                <img src="images/img_600_400.jpg" />
+                                <img src="images/img_600_400.jpg" class="rounded-bottom" />
                             </div>
-                            <div class="text-center h6">600 x 400</div>
-                        </div>
-                        <div class="col col-12 col-sm-6 col-md-4">
-                            <div class="imgWraper format_16_9">
-                                <img src="images/img_400_600.jpg" />
-                            </div>
-                            <div class="text-center h6">400 x 600</div>
                         </div>
                     </div>
-                    <div class="row mb-1">
-                        <h3 id="i43" class="mb-2">4:3</h3>
-                        <div class="col col-12 col-sm-6 col-md-4">
-                            <div class="imgWraper format_4_3">
-                                <img src="images/img_300_300.jpg" />
+                    <div class="col col-12 col-sm-6 col-md-4 mb-2">
+                        <div class="card rounded">
+                            <div class="card-header">
+                                Header
                             </div>
-                            <div class="text-center h6">300 x 300</div>
-                        </div>
-                        <div class="col col-12 col-sm-6 col-md-4">
-                            <div class="imgWraper format_4_3">
-                                <img src="images/img_600_400.jpg" />
+                            <div class="card-body">
+                                <h5 class="card-title mb-0">Card with cabinet</h5>
                             </div>
-                            <div class="text-center h6">600 x 400</div>
-                        </div>
-                        <div class="col col-12 col-sm-6 col-md-4">
-                            <div class="imgWraper format_4_3">
-                                <img src="images/img_400_600.jpg" />
-                            </div>
-                            <div class="text-center h6">400 x 600</div>
+                            <ul class="cabinet">
+                                <li>Coffee</li>
+                                <li>Tea</li>
+                                <li>Milk</li>
+                                <li>Juice</li>
+                                <li><a href="https://en.wikipedia.org/wiki/Water">Water</a></li>
+                            </ul>
                         </div>
                     </div>
-                    <div class="row mb-1">
-                        <h3 id="i32" class="mb-2">3:2</h3>
-                        <div class="col col-12 col-sm-6 col-md-4">
-                            <div class="imgWraper format_3_2">
-                                <img src="images/img_300_300.jpg" />
+                    <div class="col col-12 col-sm-6 col-md-6 mb-2 offset-3">
+                        <div class="card rounded">
+                            <div class="card-header">
+                                Log in
                             </div>
-                            <div class="text-center h6">300 x 300</div>
-                        </div>
-                        <div class="col col-12 col-sm-6 col-md-4">
-                            <div class="imgWraper format_3_2">
-                                <img src="images/img_600_400.jpg" />
+                            <div class="card-body">
+                                <h5 class="card-title">Wellcome to our page</h5>
+                                <p class="card-text mb-2 text-muted">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id tristique ex.
+                                </p>
+                                <form class="form row px-0 mb-2">
+                                    <div class="form-group col col-12 p-0 pb-2">
+                                        <label for="loginName">Login name or e-mail</label>
+                                        <input type="text" id="loginName">
+                                    </div>
+                                    <div class="form-group col col-12 p-0 pb-2">
+                                        <label for="loginPassword">Password</label>
+                                        <input type="password" id="loginPassword">
+                                    </div>
+                                    <div class="form-group col col-6 p-0">
+                                        <button class="button natural rounded">Log in</button>
+                                    </div>
+                                    <div class="form-group col col-6 p-0 text-right">
+                                        <a href="#" class="button ghost natural rounded">Create account</a>
+                                    </div>
+                                </form>
                             </div>
-                            <div class="text-center h6">600 x 400</div>
-                        </div>
-                        <div class="col col-12 col-sm-6 col-md-4">
-                            <div class="imgWraper format_3_2">
-                                <img src="images/img_400_600.jpg" />
+                            <div class="card-footer">
+                                <div class="row">
+                                    <div class="col">
+                                        <a href="#">Forgot password</a>
+                                    </div>
+                                    <div class="col text-right">
+                                        <a href="#">Terms and conditions</a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="text-center h6">400 x 600</div>
-                        </div>
-                    </div>
-                    <div class="row mb-1">
-                        <h3 id="i31" class="mb-2">3:1</h3>
-                        <div class="col col-12 col-sm-6 col-md-4">
-                            <div class="imgWraper format_3_1">
-                                <img src="images/img_300_300.jpg" />
-                            </div>
-                            <div class="text-center h6">300 x 300</div>
-                        </div>
-                        <div class="col col-12 col-sm-6 col-md-4">
-                            <div class="imgWraper format_3_1">
-                                <img src="images/img_600_400.jpg" />
-                            </div>
-                            <div class="text-center h6">600 x 400</div>
-                        </div>
-                        <div class="col col-12 col-sm-6 col-md-4">
-                            <div class="imgWraper format_3_1">
-                                <img src="images/img_400_600.jpg" />
-                            </div>
-                            <div class="text-center h6">400 x 600</div>
-                        </div>
-                    </div>
-                    <div class="row mb-1">
-                        <h3 id="i11" class="mb-2">1:1</h3>
-                        <div class="col col-12 col-sm-6 col-md-4">
-                            <div class="imgWraper">
-                                <img src="images/img_300_300.jpg" />
-                            </div>
-                            <div class="text-center h6">300 x 300</div>
-                        </div>
-                        <div class="col col-12 col-sm-6 col-md-4">
-                            <div class="imgWraper">
-                                <img src="images/img_600_400.jpg" />
-                            </div>
-                            <div class="text-center h6">600 x 400</div>
-                        </div>
-                        <div class="col col-12 col-sm-6 col-md-4">
-                            <div class="imgWraper">
-                                <img src="images/img_400_600.jpg" />
-                            </div>
-                            <div class="text-center h6">400 x 600</div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="back-to-top-wrapper d-sm-none d-xs-none">
-            <a href="#top" class="back-to-top-link sticky">Top</a>
-        </div>
-        <style>
-            nav {
-	            margin: 0 auto; 
-	            text-align: left;
-            }
+    </div>
+    <div class="back-to-top-wrapper d-sm-none d-xs-none">
+        <a href="#top" class="back-to-top-link sticky">Top</a>
+    </div>
+    <style>
+        nav {
+            margin: 0 auto;
+            text-align: left;
+            z-index: 1;
+        }
 
-            nav ul ul {
-                display: none;
-            }
+        nav ul ul {
+            display: none;
+        }
 
-            nav ul li:hover > ul {
-                display: block;
-            }
+        nav ul li:hover>ul {
+            display: block;
+        }
 
-            nav ul {
-                background: #efefef; 
-                background: linear-gradient(top, #efefef 0%, #bbbbbb 100%);  
-                background: -moz-linear-gradient(top, #efefef 0%, #bbbbbb 100%); 
-                background: -webkit-linear-gradient(top, #efefef 0%,#bbbbbb 100%); 
-                box-shadow: 0px 0px 9px rgba(0,0,0,0.15);
-                padding: 0 20px;
-                border-radius: 10px;  
-                list-style: none;
-                position: relative;
-                display: inline-table;
-            }
+        nav ul {
+            background: #efefef;
+            background: linear-gradient(top, #efefef 0%, #bbbbbb 100%);
+            background: -moz-linear-gradient(top, #efefef 0%, #bbbbbb 100%);
+            background: -webkit-linear-gradient(top, #efefef 0%, #bbbbbb 100%);
+            box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.15);
+            padding: 0 20px;
+            border-radius: 10px;
+            list-style: none;
+            position: relative;
+            display: inline-table;
+        }
 
-            nav ul:after {
-                content: ""; clear: both; display: block;
-            }
+        nav ul:after {
+            content: "";
+            clear: both;
+            display: block;
+        }
 
-            nav ul li {
-                float: left;
-            }
+        nav ul li {
+            float: left;
+        }
 
-            nav ul li:hover {
-                background: #4b545f;
-                background: linear-gradient(top, #4f5964 0%, #5f6975 40%);
-                background: -moz-linear-gradient(top, #4f5964 0%, #5f6975 40%);
-                background: -webkit-linear-gradient(top, #4f5964 0%,#5f6975 40%);
-            }
+        nav ul li:hover {
+            background: #4b545f;
+            background: linear-gradient(top, #4f5964 0%, #5f6975 40%);
+            background: -moz-linear-gradient(top, #4f5964 0%, #5f6975 40%);
+            background: -webkit-linear-gradient(top, #4f5964 0%, #5f6975 40%);
+        }
 
-			nav ul li:hover a {
-				color: #fff;
-			}
-		
-            nav ul li a {
-                display: block; padding: 25px 40px;
-                color: #757575; text-decoration: none;
-            }
-					
-            nav ul ul {
-                background: #5f6975; border-radius: 0px; padding: 0;
-                position: absolute; top: 100%;
-            }
+        nav ul li:hover a {
+            color: #fff;
+        }
 
-            nav ul ul li {
-                float: none; 
-                border-top: 1px solid #6b727c;
-                border-bottom: 1px solid #575f6a; position: relative;
-            }
+        nav ul li a {
+            display: block;
+            padding: 25px 40px;
+            color: #757575;
+            text-decoration: none;
+        }
 
-			nav ul ul li a {
-				padding: 15px 40px;
-				color: #fff;
-			}	
+        nav ul ul {
+            background: #5f6975;
+            border-radius: 0px;
+            padding: 0;
+            position: absolute;
+            top: 100%;
+        }
 
-			nav ul ul li a:hover {
-				background: #4b545f;
-			}
-		
-            nav ul ul ul {
-                position: absolute; left: 100%; top:0;
-            }
-        </style>
-    </body>
+        nav ul ul li {
+            float: none;
+            border-top: 1px solid #6b727c;
+            border-bottom: 1px solid #575f6a;
+            position: relative;
+        }
+
+        nav ul ul li a {
+            padding: 15px 40px;
+            color: #fff;
+        }
+
+        nav ul ul li a:hover {
+            background: #4b545f;
+        }
+
+        nav ul ul ul {
+            position: absolute;
+            left: 100%;
+            top: 0;
+        }
+    </style>
+</body>
+
 </html>
