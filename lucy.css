@@ -1031,6 +1031,27 @@ h6,
 .text-muted {
   color: #626262;
 }
+.text-xxs {
+  font-size: xx-small;
+}
+.text-xs {
+  font-size: x-small;
+}
+.text-s {
+  font-size: small;
+}
+.text-m {
+  font-size: medium;
+}
+.text-l {
+  font-size: large;
+}
+.text-xl {
+  font-size: x-large;
+}
+.text-xxl {
+  font-size: xx-large;
+}
 ul {
   list-style: disc inside;
 }
@@ -2438,3 +2459,4 @@ a.button:disabled.link {
   background-color: #f7f7f7;
   border-top: 1px solid #ccc;
 }
+/*# sourceMappingURL=./lucy.css.map */
